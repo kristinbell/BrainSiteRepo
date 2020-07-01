@@ -1,0 +1,73 @@
+	html, body {
+		background-color: #333;
+		width: 40%;
+		height: 75%;
+		margin: 0;
+		border: 0;
+		outline: 0;
+	}
+
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	
+	.hometag {
+		position: relative;
+		left: 110px;
+		top: 290px;
+		z-index: 1;
+	}
+
+	.home {
+		position: relative;
+		left: 100px;
+		top: 130px;
+	}
+	
+			
+	.customQTip {
+		border-color: #000000;
+		border-width: 10px;
+		background-color: #D6FAFF;
+	}
+	
+	.boxClass {
+		border-color: #000000;
+		border-width: 5px;
+		background-color: #FFFFFF;
+		stroke: #000000;
+		width: 150px;
+		height: 60px;
+	}
+	
+	.boxClass .qtip-content{
+		font-family: 'MyriadPro-Bold';
+		font-size: 24px;
+		line-height: 100%;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%)
+	}
+
+
+	.blueStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.blueStyle:hover {fill:#27AAE1;stroke:#27AAE1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+	.purpleStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.purpleStyle:hover {fill:#662D91;stroke:#662D91;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+	.pinkStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.pinkStyle:hover {fill:#EE2A78;stroke:#EE2A78;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+	.yellowStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.yellowStyle:hover {fill:#FFDE17;stroke:#FFDE17;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+	.greenStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.greenStyle:hover {fill:#8DC63F;stroke:#8DC63F;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+

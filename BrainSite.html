@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
             
-               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                                
                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
                
       
@@ -12,10 +12,60 @@
             
         <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css"/>
         <link href="styles/style.css" type="text/css" rel="stylesheet">
-         
+        
+        <audio id="deepBeep">
+            <source src="sounds/DeepBeep.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="heliumBeep">
+            <source src="sounds/HeliumBeep.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="monsterBeep">
+            <source src="sounds/MonsterBeep.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="robotBeep">
+            <source src="sounds/RobotBeep.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <script>
+        
+            var audio1 = 
+            document.getElementById("deepBeep");
+            
+            var audio2 =
+            document.getElementById("heliumBeep");
+            
+            var audio3 =
+            document.getElementById("monsterBeep");
+            
+            var audio4 =
+            document.getElementById("robotBeep");  
+            
+            function playAudio1(){
+                audio1.play();
+            };
+            
+            function playAudio2(){
+                audio2.play();
+            };
+            
+            function playAudio3(){
+                audio3.play();
+            };
+            
+            function playAudio4(){
+                audio4.play();
+            };
+            
+        </script>
+        
         <script>
             $(document).ready(function(){
                
+                
                     $('#BlueLobe').qtip(
                     {
                         content: {
@@ -150,7 +200,7 @@
 
     <body>
     
-
+    
 
 <table>
     <tr>
@@ -163,13 +213,14 @@
     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="-150 -100 950 700" width="270%" height="170%" >
         
                        
-                <path id="BlueLobe" class="blueStyle" onclick="location.href='linkpage.html';" style="cursor: pointer;" d="M253.84,108,357.46,260.85,241.33,399s-112.84,20-136.14-80.85S187.53,151.3,187.53,151.3s19.31-18.06,22.47-20.38S253.84,108,253.84,108Z"/>
+                <path id="BlueLobe" class="blueStyle" onclick="location.href='linkpage.html';" style="cursor: pointer;" onmouseover="playAudio1();" d="M253.84,108,357.46,260.85,241.33,399s-112.84,20-136.14-80.85S187.53,151.3,187.53,151.3s19.31-18.06,22.47-20.38S253.84,108,253.84,108Z"/>
                 
-                <path id="PurpleLobe" class="purpleStyle" d="M254,107.45,357.57,260.31l273-67s-42.45-67.12-52.45-72.59S540,89.9,433.16,76.25c0,0-2.92-7.63-41.72-.52S254,107.45,254,107.45Z"/>
                 
-                <path id="PinkLobe" class="pinkStyle" d="M358.92,261.47l273-67s52.18,77.37,50,125-4.66,89.32-26,106.88-50.38,18.31-43.51,55.72l-41,15.92Z"/>
+                <path id="PurpleLobe" class="purpleStyle" onmouseover="playAudio2();" d="M254,107.45,357.57,260.31l273-67s-42.45-67.12-52.45-72.59S540,89.9,433.16,76.25c0,0-2.92-7.63-41.72-.52S254,107.45,254,107.45Z"/>
                 
-                <path id="YellowLobe" class="yellowStyle" d="M242.32,400.48,358.44,262.31,570.87,498.84s-35,10-45.08,8.51-13.06,17.89-13.06,17.89-1.71,11.9-21.89-3.76-32.62-25-40.53-20.33-21-22-21.69-37.3-11.5-17.6-28.15-2.25S371.56,498.8,347.83,497c0,0-66.31,16.21-85.1-16.86s-11.16-37.65-11.16-37.65S216.06,431.72,242.32,400.48Z"/>
+                <path id="PinkLobe" class="pinkStyle" onmouseover="playAudio3();" d="M358.92,261.47l273-67s52.18,77.37,50,125-4.66,89.32-26,106.88-50.38,18.31-43.51,55.72l-41,15.92Z"/>
+                
+                <path id="YellowLobe" class="yellowStyle" onmouseover="playAudio4();" d="M242.32,400.48,358.44,262.31,570.87,498.84s-35,10-45.08,8.51-13.06,17.89-13.06,17.89-1.71,11.9-21.89-3.76-32.62-25-40.53-20.33-21-22-21.69-37.3-11.5-17.6-28.15-2.25S371.56,498.8,347.83,497c0,0-66.31,16.21-85.1-16.86s-11.16-37.65-11.16-37.65S216.06,431.72,242.32,400.48Z"/>
                 
                 <path id="GreenSurround" class="greenStyle" d="M702.63,293.53c-5.9-37.92-64.12-135.9-97-175.56S461.31,63.12,426.72,55.53,274,82.53,274,82.53c-68.35,10.13-99.57,46.41-99.57,46.41l-16.87,13.5S58.83,195.6,70.65,313.73s151.88,99.56,151.88,99.56C192.15,443.67,231,459.7,231,459.7c5.07,93.66,120.66,60.75,135,50.63s52.31-65.82,61.59-30.38S440.22,528,457.1,523.83s38.81,28.68,52.31,32.9,13.5-28.69,31.22-25.31,82.69-22.78,88.59-27S609,474,663,453,708.54,331.45,702.63,293.53ZM640.18,436.06c-48.85,19.09-25.19,42.75-30.53,46.57s-64.12,27.48-80.15,24.42-16,26.72-28.25,22.91-32.06-33.59-47.33-29.78-18.32-7.63-26.72-39.69S384.46,478.81,371.48,488s-117.56,38.93-122.14-45.8c0,0-35.11-14.5-7.63-42,0,0-126.72,16.8-137.41-90.07s78.63-155,78.63-155l15.27-12.22s28.24-32.82,90.07-42c0,0,106.87-31.3,138.17-24.43S558.5,97.13,588.27,133s82.45,124.52,87.79,158.82S689,417,640.18,436.06Z"/>
                 
@@ -182,6 +233,8 @@
         </tr>
 </table>        
        </body>
+    
+    
 </html>
 
 

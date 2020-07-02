@@ -13,18 +13,41 @@
         <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css"/>
         <link href="styles/style.css" type="text/css" rel="stylesheet">
         
+        <audio id="70sPiano">
+            <source src="sounds/70sPiano.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <audio id="Brazillian">
+            <source src="sounds/Brazillian.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <audio id="ClassicBird">
+            <source src="sounds/ClassicBird.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <audio id="Strings">
+            <source src="sounds/Strings.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
         <audio id="deepBeep">
             <source src="sounds/DeepBeep.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        
         <audio id="heliumBeep">
             <source src="sounds/HeliumBeep.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        
         <audio id="monsterBeep">
             <source src="sounds/MonsterBeep.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        
         <audio id="robotBeep">
             <source src="sounds/RobotBeep.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -33,16 +56,19 @@
         <script>
         
             var audio1 = 
-            document.getElementById("deepBeep");
+            document.getElementById("70sPiano");
             
             var audio2 =
-            document.getElementById("heliumBeep");
+            document.getElementById("Brazillian");
             
             var audio3 =
-            document.getElementById("monsterBeep");
+            document.getElementById("ClassicBird");
             
             var audio4 =
-            document.getElementById("robotBeep");  
+            document.getElementById("Strings"); 
+            
+            var audio5 =
+            document.getElementById("robotBeep"); 
             
             function playAudio1(){
                 audio1.play();
@@ -58,6 +84,10 @@
             
             function playAudio4(){
                 audio4.play();
+            };
+            
+            function playAudio5(){
+                audio5.play();
             };
             
         </script>
@@ -222,7 +252,7 @@
                 
                 <path id="YellowLobe" class="yellowStyle" onmouseover="playAudio4();" d="M242.32,400.48,358.44,262.31,570.87,498.84s-35,10-45.08,8.51-13.06,17.89-13.06,17.89-1.71,11.9-21.89-3.76-32.62-25-40.53-20.33-21-22-21.69-37.3-11.5-17.6-28.15-2.25S371.56,498.8,347.83,497c0,0-66.31,16.21-85.1-16.86s-11.16-37.65-11.16-37.65S216.06,431.72,242.32,400.48Z"/>
                 
-                <path id="GreenSurround" class="greenStyle" d="M702.63,293.53c-5.9-37.92-64.12-135.9-97-175.56S461.31,63.12,426.72,55.53,274,82.53,274,82.53c-68.35,10.13-99.57,46.41-99.57,46.41l-16.87,13.5S58.83,195.6,70.65,313.73s151.88,99.56,151.88,99.56C192.15,443.67,231,459.7,231,459.7c5.07,93.66,120.66,60.75,135,50.63s52.31-65.82,61.59-30.38S440.22,528,457.1,523.83s38.81,28.68,52.31,32.9,13.5-28.69,31.22-25.31,82.69-22.78,88.59-27S609,474,663,453,708.54,331.45,702.63,293.53ZM640.18,436.06c-48.85,19.09-25.19,42.75-30.53,46.57s-64.12,27.48-80.15,24.42-16,26.72-28.25,22.91-32.06-33.59-47.33-29.78-18.32-7.63-26.72-39.69S384.46,478.81,371.48,488s-117.56,38.93-122.14-45.8c0,0-35.11-14.5-7.63-42,0,0-126.72,16.8-137.41-90.07s78.63-155,78.63-155l15.27-12.22s28.24-32.82,90.07-42c0,0,106.87-31.3,138.17-24.43S558.5,97.13,588.27,133s82.45,124.52,87.79,158.82S689,417,640.18,436.06Z"/>
+                <path id="GreenSurround" class="greenStyle" onmouseover="playAudio5();"  d="M702.63,293.53c-5.9-37.92-64.12-135.9-97-175.56S461.31,63.12,426.72,55.53,274,82.53,274,82.53c-68.35,10.13-99.57,46.41-99.57,46.41l-16.87,13.5S58.83,195.6,70.65,313.73s151.88,99.56,151.88,99.56C192.15,443.67,231,459.7,231,459.7c5.07,93.66,120.66,60.75,135,50.63s52.31-65.82,61.59-30.38S440.22,528,457.1,523.83s38.81,28.68,52.31,32.9,13.5-28.69,31.22-25.31,82.69-22.78,88.59-27S609,474,663,453,708.54,331.45,702.63,293.53ZM640.18,436.06c-48.85,19.09-25.19,42.75-30.53,46.57s-64.12,27.48-80.15,24.42-16,26.72-28.25,22.91-32.06-33.59-47.33-29.78-18.32-7.63-26.72-39.69S384.46,478.81,371.48,488s-117.56,38.93-122.14-45.8c0,0-35.11-14.5-7.63-42,0,0-126.72,16.8-137.41-90.07s78.63-155,78.63-155l15.27-12.22s28.24-32.82,90.07-42c0,0,106.87-31.3,138.17-24.43S558.5,97.13,588.27,133s82.45,124.52,87.79,158.82S689,417,640.18,436.06Z"/>
                 
                 
 

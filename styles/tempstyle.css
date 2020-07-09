@@ -230,14 +230,13 @@
 		text-align: center;
 	}
 	
-	.shbutton {
-		background: linear-gradient(to bottom , #333333, 1%, #27AAE1 100%);
+	.all-home-buttons{
 		background-color: #000000;
-		border-style: inset;
+		border-style: groove;
 		border-width: 2px;
 		border-color: #000000;
 		color: #000000;
-		padding: 8px 12px;
+		padding: 2px 12px 7px 12px;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
@@ -249,6 +248,69 @@
 		box-shadow: inset 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
 	}
 	
+	#shbutton {
+		background: linear-gradient(to bottom , #333333, 1%, #27AAE1 100%);
+		
+	}
+	
+	.depression-div{
+			position: relative;
+			top: 150px;
+			left: -585px;
+			z-index: 1;
+			width: 200px;
+			height: 100px;
+			text-align: center;
+	}
+		
+	#depbutton {
+		background: linear-gradient(to bottom , #333333, 1%, #B743DE 100%);
+	}
+
+	.anxiety-div{
+			position: relative;
+			top: -850px;
+			left: 620px;
+			z-index: 1;
+			width: 200px;
+			height: 100px;
+			text-align: center;
+	}
+		
+	#anxbutton {
+		background: linear-gradient(to bottom , #333333, 1%, #EE2A78 100%);
+	}
+
+	.loneliness-div{
+				position: relative;
+				top: -720px;
+				left: 165px;
+				z-index: 1;
+				width: 200px;
+				height: 100px;
+				text-align: center;
+	}
+			
+	#lonebutton {
+		background: linear-gradient(to bottom , #333333, 1%, #FFDE17 100%);
+	}
+
+	.about-div{
+		position: relative;
+		top: -580px;
+		left: 185px;
+		z-index: 1;
+		width: 200px;
+		height: 100px;
+		text-align: center;
+		}
+				
+	#aboutbutton {
+		background: linear-gradient(to bottom , #333333, 1%, #8DC63F 100%);
+	}
+
+
+
 	.nav-buttons{
 		text-align: center;
 		text-decoration: none;

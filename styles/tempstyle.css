@@ -339,6 +339,33 @@
 
 	}
 	
+	#sh-color{
+		background-color: #27AAE1;
+	}
+	
+	#dep-color{
+		background-color: #B743DE;
+	}
+	
+	#anx-color{
+		background-color: #EE2A78;
+	}
+	
+	#lone-color{
+		background-color: #FFDE17;
+	}
+	
+	#about-color{
+		background-color: #8DC63F;
+	}
+	
+	.middle-box{
+		position: fixed;
+		top: 450px;
+		width: 100%;
+		height: 50px;
+		z-index: -1;	
+	}	
 	
 	.customQTip {
 		border-color: #000000;

@@ -359,6 +359,10 @@
 		background-color: #8DC63F;
 	}
 	
+	#home-color{
+		background-color: #000000;
+	}
+	
 	.middle-box{
 		position: fixed;
 		top: 450px;

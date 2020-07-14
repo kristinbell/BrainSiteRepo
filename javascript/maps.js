@@ -42,9 +42,8 @@ function createMarkers(places) {
         position: place.geometry.location
       });
   
-      var li = document.createElement("li");
-      li.textContent = place.name;
-      placesList.appendChild(li);
+      var li = "<div class=\"card\" style=\"width: 100%;\">" + "<div class=\"card-body\">" + "<h5 class=\"card-title\">" + place.name + "</h5>" + "<h6 class=\"card-subtitle mb-2 text-muted\">" + place.formatted_address + "</h6>" + "<a href=\"#\" class=\"card-link\">Link</a>" + "<a href=\"" + place.url + "\" class=\"card-link\">Another link</a>" + "</div>" + "</div>";
+      document.getElementById("places").innerHTML += li;
   
       bounds.extend(place.geometry.location);
     }

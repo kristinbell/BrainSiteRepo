@@ -8,10 +8,13 @@
             <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
             <link href="../styles/style.css" type="text/css" rel="stylesheet">
             <link href="../styles/selfharm.css" type="text/css" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
             
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https//code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
             <script type="text/javascript" src="../javascript/maps.js"></script>
+            <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz-4Cj50aYA2Veq2e1LMTUaDz9hf_Vvtc&libraries=places&callback=initMap"></script>
                                                
         <title>Self-Harm</title>
@@ -40,13 +43,39 @@
     
         <main class="page">
             <section class="related-info">
-              <div id="places">
-
-              </div>
+              <div id="places"></div>
             </section>
             <section class="content1">
-                <div id="map">
-
+                <div id="map"></div>
+                <div class="container checkbox-container">
+                    <div class="row map-top-row align-items-center">
+                        <div class="col-md-4">
+                            <label for="mentalhealth-checkbox">Mental Health Providers</label><br>
+                            <input type="checkbox" id="mentalhealth-checkbox" data-toggle="toggle">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="psychiatric-checkbox">Inpatient/Outpatient Psychiatric Care</label><br>
+                            <input type="checkbox" id="psychiatric-checkbox" data-toggle="toggle">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="addiction-checkbox">Addiction Rehabilitation/Detox</label><br>
+                            <input type="checkbox" id="addiction-checkbox" data-toggle="toggle">
+                        </div>
+                    </div>
+                    <div class="row map-bottom-row align-items-center">
+                        <div class="col-md-4">
+                            <label for="shelters-checkbox">Shelters/Emergency Housing</label><br>
+                            <input type="checkbox" id="shelters-checkbox" data-toggle="toggle">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="lgbtq-checkbox">LGBTQIA+ Mental Health</label><br>
+                            <input type="checkbox" id="lgbtq-checkbox" data-toggle="toggle">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="resource-checkbox">Something Else</label><br>
+                            <input type="checkbox" data-toggle="toggle">
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

@@ -1,0 +1,45 @@
+#map {
+  height: 70%;
+}
+
+.checkbox-container {
+  height: 30%;
+  padding-top: 5px;
+  overflow-y: scroll;
+}
+
+.col-md-4 {
+  text-align: center;
+}
+
+.map-top-row, .map-bottom-row {
+  height: auto;
+}
+
+#places {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.toggle-off {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.toggle.off {
+  border-color: rgba(0, 0, 0, .25);
+}
+
+.toggle-handle {
+  background-color: white;
+  border: thin rgba(0, 0, 0, .25) solid;
+}
+
+label {
+  font-size: 0.6em;
+}
+
+.content1 {
+  padding: 0px 0px 5px 0px;
+  border-style: none;
+  border-width: 0px;
+}

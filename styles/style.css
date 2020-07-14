@@ -672,7 +672,7 @@
 		.info-aside{
 			width: 600px;
 			height: 400px;
-			font-size: 1rem;
+			font-size: .95rem;
 		}
 		#sh-size.info-aside{
 			height: 300px;
@@ -702,12 +702,12 @@
 		.related-info{
 			width: 200px;
 			height: 600px;
-			font-size: 1rem;
+			font-size: .95rem;
 		}
 		.content1{
 			width: 600px;
 			height: 600px;
-			font-size: 1rem;
+			font-size: .95rem;
 		}
 	}
 

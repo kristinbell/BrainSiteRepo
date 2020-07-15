@@ -92,6 +92,7 @@ div.col{
   height: 100%;
   width: 100%;
   overflow-y: scroll;
+  
 }
 
 .toggle-off {
@@ -123,6 +124,11 @@ div.col{
   border: thin rgba(0, 0, 0, .25) solid;
 }
 
+.card{
+  border-top: 8px;
+  border-style: solid;
+  border-color: #27AAE1;
+}
 a.card-link{
   color: #000000;
   text-decoration: none;

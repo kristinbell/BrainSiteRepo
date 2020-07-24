@@ -106,17 +106,17 @@ div.col{
   font-size: 1em;
  }
 .btn-primary{
-  border-color: #27AAE1;
+  border-color: var(--aqua-w-black);
 }
 .btn-primary:hover{
-  border-color: #27AAE1;
+  border-color: var(--aqua-w-black);
 }
 .toggle-on{
-  background-color: #27AAE1;
+  background-color: var(--aqua-w-black);
 }
 
 .toggle-on:hover{
-  background-color: #FFDE17;
+  background-color: var(--pink-w-black);
 }
 
 .toggle-handle {
@@ -127,7 +127,7 @@ div.col{
 .card{
   border-top: 8px;
   border-style: solid;
-  border-color: #27AAE1;
+  border-color: var(--aqua-w-black);
 }
 a.card-link{
   color: #000000;
@@ -139,12 +139,12 @@ a.card-link:focus{
   text-decoration: none;
 }
 a.card-link:hover{
-  color: #27AAE1;
+  color: var(--aqua-w-black);
   text-decoration: none;
 }
 h5.small-caps{
   font-variant: small-caps;
-  color: #27AAE1;
+  color: #000000;
   font-weight: 600;
   font-size: 2rem;
 }

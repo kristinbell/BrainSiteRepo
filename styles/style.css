@@ -1,3 +1,16 @@
+	:root {
+		--aqua-w-black: #27AAE1;
+		--aqua-w-white: #115D7E;
+		--purple-w-black: #DD5DFD;
+		--purple-w-white: #8A1EAE;
+		--pink-w-black: #FD58BE;
+		--pink-w-white: #A50D4A;
+		--yellow-w-black: #FFDE17;
+		--yellow-w-white: #615200;
+		--green-w-black: #8DC63F;
+		--green-w-white: #445E1C;
+	}
+
 	html, body {
 		background-color: #444;
 		z-index: -2;
@@ -719,7 +732,6 @@
 		}
 		#sh-border{
 			height: 40px;
-			color: #bbb;
 			border-left: solid;
 			border-left-width: 3px;
 			margin-top: 10px;
@@ -846,7 +858,6 @@
 			}
 			#sh-border{
 				height: 50px;
-				color: #bbb;
 				border-left: solid;
 				border-left-width: 3px;
 				margin-top: 0px;
@@ -976,7 +987,6 @@
 		}
 		#sh-border{
 			height: 80px;
-			color: #bbb;
 			border-left: solid;
 			border-left-width: 3px;
 			margin-top: 20px;
@@ -1022,6 +1032,10 @@
 	#home{
 	}
 	
+	#sh-border{
+		color: var(--aqua-w-black);
+	}
+	
 	.hometag {
 			background-color: white;
 			border-color: white;
@@ -1037,32 +1051,32 @@
 	}
 
 	#sh {
-		background-color: #27AAE1;
-		border-color: #27AAE1;
+		background-color: var(--aqua-w-black);
+		border-color: var(--aqua-w-black);
 		color: #000000;
 	}
 	
 	#dep {
-		background-color: #B743DE;
-		border-color: #B743DE;
+		background-color: var(--purple-w-black);
+		border-color: var(--purple-w-black);
 		color: #000000;
 	}
 	
 	#anx{
-		background-color: #EE2A78;
-		border-color: #EE2A78;
+		background-color: var(--pink-w-black);
+		border-color: var(--pink-w-black);
 		color: #000000;
 	}
 	
 	#lone{
-		background-color: #FFDE17;
-		border-color: #FFDE17;
+		background-color: var(--yellow-w-black);
+		border-color: var(--yellow-w-black);
 		color: #000000;
 	}
 	
 	#about{
-		background-color: #8DC63F;
-		border-color: #8DC63F;
+		background-color: var(--green-w-black);
+		border-color: var(--green-w-black);
 		color: #000000;
 	}
 
@@ -1085,7 +1099,7 @@
 		text-decoration: none;
 	}
 	a.button-link:hover{
-		color: #FFFFFF;
+		color: #000000;
 		text-decoration: none;
 	}
 	.all-home-buttons{
@@ -1114,7 +1128,7 @@
 	}
 
 	#shbutton {
-		background: linear-gradient(to bottom , #333333, 1%, #27AAE1 100%);
+		background: linear-gradient(to bottom , #333333, 1%, var(--aqua-w-black) 100%);
 		
 	}
 	
@@ -1126,7 +1140,7 @@
 	}
 		
 	#depbutton {
-		background: linear-gradient(to bottom , #333333, 1%, #B743DE 100%);
+		background: linear-gradient(to bottom , #333333, 1%, var(--purple-w-black) 100%);
 	}
 
 	.anxiety-div{
@@ -1137,7 +1151,7 @@
 	}
 		
 	#anxbutton {
-		background: linear-gradient(to bottom , #333333, 1%, #EE2A78 100%);
+		background: linear-gradient(to bottom , #333333, 1%, var(--pink-w-black) 100%);
 	}
 
 	.loneliness-div{
@@ -1148,7 +1162,7 @@
 	}
 			
 	#lonebutton {
-		background: linear-gradient(to bottom , #333333, 1%, #FFDE17 100%);
+		background: linear-gradient(to bottom , #333333, 1%, var(--yellow-w-black) 100%);
 	}
 
 	.about-div{
@@ -1159,7 +1173,7 @@
 	}
 				
 	#aboutbutton {
-		background: linear-gradient(to bottom , #333333, 1%, #8DC63F 100%);
+		background: linear-gradient(to bottom , #333333, 1%, var(--green-w-black) 100%);
 	}
 	
 	
@@ -1187,58 +1201,33 @@
 		text-decoration: none;
 	}
 	a.nav-button-link:hover{
-		color: #AAAAAA;
+		color: #000000;
 		text-decoration: none;
 	}
 
-	a.nav-button-link.self-harm:hover{
-		color: #27AAE1;
-		text-decoration: none;
-	}
-	
-	a.nav-button-link.depression:hover{
-		color: #B743DE;
-		text-decoration: none;
-	}
-	
-	a.nav-button-link.anxiety:hover{
-		color: #EE2A78;
-		text-decoration: none;
-	}
-	
-	a.nav-button-link.loneliness:hover{
-		color: #FFDE17;
-		text-decoration: none;
-	}
-	
-	a.nav-button-link.about:hover{
-		color: #8DC63F;
-		text-decoration: none;
-	}
-		
-		
+			
 	#home-nav-button{
 		background-color: #FFFFFF;
 	}
 	
 	#self-harm-nav-button{
-		background-color: #27AAE1;
+		background-color: var(--aqua-w-black);
 	}
 	
 	#depression-nav-button{
-		background-color: #B743DE;
+		background-color: var(--purple-w-black);
 	}
 	
 	#anxiety-nav-button{
-		background-color: #EE2A78;
+		background-color: var(--pink-w-black);
 	}
 	
 	#loneliness-nav-button{
-		background-color: #FFDE17;
+		background-color: var(--yellow-w-black);
 	}
 	
 	#about-nav-button{
-		background-color: #8DC63F;
+		background-color: var(--green-w-black);
 	}
 	
 	.buttons{
@@ -1308,23 +1297,23 @@
 	}
 	
 	#sh-color{
-		background-color: #27AAE1;
+		background-color: var(--aqua-w-black);
 	}
 	
 	#dep-color{
-		background-color: #B743DE;
+		background-color: var(--purple-w-black);
 	}
 	
 	#anx-color{
-		background-color: #EE2A78;
+		background-color: var(--pink-w-black);
 	}
 	
 	#lone-color{
-		background-color: #FFDE17;
+		background-color: var(--yellow-w-black);
 	}
 	
 	#about-color{
-		background-color: #8DC63F;
+		background-color: var(--green-w-black);
 	}
 	
 	#home-color{
@@ -1347,18 +1336,18 @@
 	
 
 	.blueStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.blueStyle:hover {fill:#27AAE1;stroke:#27AAE1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.blueStyle2 {fill:#27AAE1;stroke:#27AAE1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.blueStyle:hover {fill:var(--aqua-w-black);stroke:var(--aqua-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.blueStyle2 {fill:var(--aqua-w-black);stroke:var(aqua-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	
 	.purpleStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.purpleStyle:hover {fill:#B743DE;stroke:#B743DE;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.purpleStyle:hover {fill:var(--purple-w-black);stroke:var(--purple-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
 	.pinkStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.pinkStyle:hover {fill:#EE2A78;stroke:#EE2A78;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.pinkStyle:hover {fill:var(--pink-w-black);stroke:var(--pink-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	
 	.yellowStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.yellowStyle:hover {fill:#FFDE17;stroke:#FFDE17;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.yellowStyle:hover {fill:var(--yellow-w-black);stroke:var(--yellow-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	
 	.greenStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.greenStyle:hover {fill:#8DC63F;stroke:#8DC63F;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.greenStyle:hover {fill:var(--green-w-black);stroke:var(--green-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 

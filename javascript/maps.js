@@ -85,27 +85,29 @@ function createMarkers(places) {
         + "<h6 class=\"card-subtitle mb-2 text-muted\">" 
         + place.formatted_phone_number
         + "</h6>"
-        + "<a href=\"" 
-        + place.website 
-        + "\" class=\"card-link\">Website</a>" 
-        + "</div>" 
-        + "</div>";
+        if (place.website) {
+          li += "<a href=\"" + place.website + "\" class=\"card-link\" target=\"_blank\">Website</a>" 
+        }
+        li += "</div></div>"
         document.getElementById("places").innerHTML += li;
 
         google.maps.event.addListener(marker, "click", function() {
-          infowindow.setContent(
+          var infoWindow = 
             "<div class=\"container\"><strong>" +
-              place.name +
-              "</strong><br>" +
-              "Address: " +
-              place.formatted_address +
-              "<br>" +
-              place.formatted_phone_number +
-              "<br>" +
-              "<a href=\"" +
-              place.website +
-              "\" class=\"card-link\">Website</a>" +
-              "</div>"
+            place.name +
+            "</strong><br>" +
+            "Address: " +
+            place.formatted_address +
+            "<br>" +
+            place.formatted_phone_number +
+            "<br>"
+            if (place.website) {
+              infoWindow += "<br><a href=\"" + place.website + "\" class=\"infowindow-link\" target=\"_blank\">Website</a>" 
+            }
+            infoWindow += "</div>"
+            
+          infowindow.setContent(
+            infoWindow
           )
           infowindow.open(map, this);
         })
@@ -121,7 +123,7 @@ function mapsQuery(checkboxId) {
 
   if (checkboxObject.checked) {
     if (checkboxId == 'mentalhealth-checkbox') {
-      textQuery = "psychiatric OR psychologist OR therapist OR LCSW OR counselor OR \"mental health\" OR dr OR massage "
+      textQuery = "psychiatric OR psychologist OR therapist OR LCSW OR counselor OR \"mental health\" OR dr. -massage "
       switchOffCheckboxes(checkboxId)
     } else if (checkboxId == "psychiatric-checkbox") {
       textQuery = "behavioral OR psychiatric OR inpatient OR hospital "
@@ -133,7 +135,7 @@ function mapsQuery(checkboxId) {
       textQuery = "shelter OR \"domestic violence\" OR free OR low-cost OR \"emergency housing\" OR homeless OR houseless "
       switchOffCheckboxes(checkboxId)
     } else if (checkboxId == "lgbtq-checkbox") {
-      textQuery = "gay OR lesbian OR trans OR queer OR lgb OR lgbt OR lgbtqia+ AND (treatment OR counseling OR psychiatrist OR psychologist OR therapist OR counselor) "
+      textQuery = "gay OR lesbian OR trans OR queer OR lgb OR lgbt OR lgbtqia+ AND (treatment OR counseling OR psychiatrist OR psychologist OR therapist OR counselor OR LCSW OR therapy OR specialization OR \"mental health\" OR \"behavioural health\" OR health OR center OR provider OR clinician) -truck -trucking -transportation -bar -event -import  -mortgage  -transmission -chorus"
       switchOffCheckboxes(checkboxId)
     } else if (checkboxId == "hospital-checkbox") {
       textQuery = "hospital OR \"urgent care\""

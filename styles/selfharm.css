@@ -132,7 +132,7 @@ div.col{
 a.card-link{
   color: #000000;
   text-decoration: none;
-  font-size: .8em;
+  font-size: 1em;
 }
 a.card-link:focus{
   color: #000000;
@@ -161,4 +161,8 @@ label {
   padding: 0px 0px 5px 0px;
   border-style: none;
   border-width: 0px;
+}
+
+.infowindow-link {
+  text-decoration: underline;
 }

@@ -1,0 +1,170 @@
+/* #map {
+  height: 70%;
+}
+
+.checkbox-container {
+  height: 30%;
+  padding-top: 5px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 320px) {
+  #map{
+    height: 50%;
+  }
+  .checkbox-container{
+    height: 50%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px){
+  #map{
+    height: 50%;
+  }
+  .checkbox-container{
+    height: 50%;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 599px){
+  #map{
+    height: 55%;
+  }
+  .checkbox-container{
+    height: 45%;
+  }
+}
+@media (min-width: 600px) and (max-width: 767px){
+  #map{
+    height: 60%;
+  }
+  .checkbox-container{
+    height: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+  #map{
+    height: 60%;
+  }
+  .checkbox-container{
+    height: 40%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1349px){
+ #map{
+    height: 65%;
+  }
+  .checkbox-container{
+    height: 35%;
+  }
+}
+@media (min-width: 1350px) and (max-width: 1919px){
+ #map{
+    height: 75%;
+  }
+  .checkbox-container{
+    height: 25%;
+  }
+}
+@media (min-width: 1920px){
+#map{
+    height: 75%;
+  }
+  .checkbox-container{
+    height: 25%;
+  }
+}
+
+  
+div.col{
+  
+  padding: 10px;
+}
+.col-md-4 {
+  text-align: center;
+}
+
+.map-top-row, .map-bottom-row {
+  height: auto;
+}
+
+#places {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  
+}
+
+.toggle-off {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.toggle.off {
+  border-color: rgba(0, 0, 0, .25);
+}
+
+.btn{
+  font-size: 1em;
+ }
+.btn-primary{
+  border-color: var(--aqua-w-black);
+}
+.btn-primary:hover{
+  border-color: var(--aqua-w-black);
+}
+.toggle-on{
+  background-color: var(--aqua-w-black);
+}
+
+.toggle-on:hover{
+  background-color: var(--pink-w-black);
+}
+
+.toggle-handle {
+  background-color: white;
+  border: thin rgba(0, 0, 0, .25) solid;
+}
+
+.card{
+  border-top: 8px;
+  border-style: solid;
+  border-color: var(--aqua-w-black);
+}
+a.card-link{
+  color: #000000;
+  text-decoration: none;
+  font-size: .8em;
+}
+a.card-link:focus{
+  color: #000000;
+  text-decoration: none;
+}
+a.card-link:hover{
+  color: var(--aqua-w-black);
+  text-decoration: none;
+} */
+h5.small-caps{
+  font-variant: small-caps;
+  color: #000000;
+  font-weight: 600;
+  font-size: 2rem;
+}
+h2.small-caps{
+    font-variant: small-caps;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+#kristin{
+  text-align: center;
+}
+#james{
+  text-align: center;
+}
+.personinfo{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#person{
+  width: 510px;
+  margin: 30px;
+}

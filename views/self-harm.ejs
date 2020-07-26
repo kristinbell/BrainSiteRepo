@@ -9,14 +9,37 @@
 
             <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
             
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+            <link href="stylesheets/mobile.css" type="text/css" rel="stylesheet"> 
             <link href="stylesheets/selfharm.css" type="text/css" rel="stylesheet">
-                                   
+                                  
         <title>Self-Harm</title>
     </head>
 
     <body id="pgs">
-    
+     <!-- instructions from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+     <!-- Simulate a smartphone / tablet -->
+        <div class="mobile-container">
+        
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="/" class="active" id="shmobile" style="font-family:'Luckiest Guy', cursive;">BRAIN&#9889SPARK</a>
+                <div id="myLinks">
+                    <a href="depression" id="depmobile">depression</a>
+                    <a href="anxiety" id="anxmobile">anxiety</a>
+                    <a href="loneliness" id="lonemobile">loneliness</a>
+                    <a href="about" id="aboutmobile">about</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            
+        <!-- end of smartphone / tablet -->
+        </div>
+        
+        <div class="largeScreen">
     
         <header class="header-container">
             <div class="hometag" id="sh">Self-Harm</div>
@@ -30,7 +53,7 @@
             <div><a href="loneliness" class="nav-button-link"><button class="nav-buttons" id="loneliness-nav-button">loneliness</button></a></div>
             <div><a href="about" class="nav-button-link"><button class="nav-buttons" id="about-nav-button">about</button></a></div>
         </nav>
-    
+        </div>
         <aside class="about-boxes">
             <section class="info-aside" id="sh-size"><div class="sh-info-aside"><h2 class="small-caps">self-harm tools</h2>
                 <p>Below you'll find a search tool to find people and places that can help you if you are dealing with thoughts of self-harm. If you are having an emergency, please call for help. Here are also a few US text and phone-based resources: </p></div>
@@ -92,7 +115,7 @@
         <div class="mid-box-alt" id="sh-color" ></div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
+        <script type="text/javascript" src="javascripts/mobile.js"></script>
         <script type="text/javascript" src="javascripts/maps.js"></script>
         <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7RLFyMabLT8kRHO777mEDX4McE2hrMxc&libraries=places&callback=initMap"></script>

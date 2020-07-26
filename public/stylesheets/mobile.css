@@ -1,0 +1,86 @@
+
+.mobile-container{
+	max-width: 960px;
+	margin: auto;
+	color: #000000;
+}
+
+.topnav{
+	overflow: hidden;
+	position: relative;
+	background-color: var(--green-w-black);
+}
+
+.topnav #myLinks{
+	display: none;
+}
+
+.topnav a{
+	color: #000000;
+	padding: 14px 16px 10px 16px;
+	text-decoration: none;
+	font-size: 1.8rem;
+	font-variant: small-caps;
+	font-weight: 700;
+	display: block;
+}
+
+.topnav a.icon{
+	background: var(--pink-w-black);
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.topnav a:hover{
+	background-color: var(--yellow-w-black);
+	color: black;
+}
+#shmobile{
+	background-color: var(--aqua-w-black);
+}
+#shmobile:hover{
+	background-color: #000000;
+	color: var(--aqua-w-black);
+}
+#depmobile{
+	background-color: var(--purple-w-black);
+}
+#depmobile:hover{
+	background-color: #000000;
+	color: var(--purple-w-black);
+}
+#anxmobile{
+	background-color: var(--pink-w-black);
+}
+#anxmobile:hover{
+	background-color: #000000;
+	color: var(--pink-w-black);
+}
+#lonemobile{
+	background-color: var(--yellow-w-black);
+}
+#lonemobile:hover{
+	background-color: #000000;
+	color: var(--yellow-w-black);
+}
+#aboutmobile{
+	background-color: var(--green-w-black);
+}
+#aboutmobile:hover{
+	background-color: #000000;
+	color: var(--green-w-black);
+}
+.active{
+	background-color: #4CAF50;
+	color: white;
+}
+
+@media only screen and (max-width: 960px){
+	.largeScreen {display: none;}
+}
+
+@media only screen and (min-width: 960px){
+	.mobile-container {display: none;}
+}

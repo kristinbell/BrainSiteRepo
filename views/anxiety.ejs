@@ -8,13 +8,36 @@
             <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
             <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
-            
+            <link href="stylesheets/mobile.css" type="text/css" rel="stylesheet">
         <title>Anxiety</title>
     </head>
 
     <body id="pgs">
-    
+     <!-- instructions from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+     <!-- Simulate a smartphone / tablet -->
+        <div class="mobile-container">
+        
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="/" class="active" id="anxmobile" style="font-family:'Luckiest Guy', cursive;">BRAIN&#9889SPARK</a>
+                <div id="myLinks">
+                    <a href="selfharm" id="shmobile">self-harm</a>
+                    <a href="depression" id="depmobile">depression</a>
+                    <a href="loneliness" id="lonemobile">loneliness</a>
+                    <a href="about" id="aboutmobile">about</a>
+
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            
+        <!-- end of smartphone / tablet -->
+        </div>
+        
+        <div class="largeScreen">
     
         <header class="header-container">
             <div class="hometag" id="anx">Anxiety</div>
@@ -27,7 +50,8 @@
             <div><a href="loneliness" class="nav-button-link"><button class="nav-buttons" id="loneliness-nav-button">loneliness</button></a></div>
             <div><a href="about" class="nav-button-link"><button class="nav-buttons" id="about-nav-button">about</button></a></div>
         </nav>
-    
+        </div>
+        
         <aside class="about-boxes">
             <section class="info-aside"><h3>Anxiety Info. Blurb Here</h3>
                 <p>Please let me outside pouty face yay! wait, it's cold out please let me inside pouty face oh, thank you rub against mommy's leg oh it looks so nice out, please let me outside again the neighbor cat was mean to me please let me back inside instantly break out into full speed gallop across the house for no reason or there's a forty year old lady there let us feast use lap as chair, or yowling nonstop the whole night. </p></section>
@@ -40,8 +64,8 @@
     
         <div class="mid-box-alt" id="anx-color" ></div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="javascripts/mobile.js"></script>
         <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
                                                       
     </body>

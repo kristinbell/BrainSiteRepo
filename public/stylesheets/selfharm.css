@@ -95,33 +95,46 @@ div.col{
   
 }
 
-.toggle-off {
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-}
-.toggle.off {
-  border-color: rgba(0, 0, 0, .25);
-}
 
 .btn{
   font-size: 1em;
+  color: #000000;
  }
+.btn-default{
+  background-color: #000000;
+  color: white;
+}
 .btn-primary{
-  border-color: var(--aqua-w-black);
+   border-color: var(--aqua-w-black);
 }
 .btn-primary:hover{
   border-color: var(--aqua-w-black);
 }
+
 .toggle-on{
   background-color: var(--aqua-w-black);
 }
-
 .toggle-on:hover{
   background-color: var(--pink-w-black);
+  color: #000000;
 }
 
 .toggle-handle {
   background-color: white;
   border: thin rgba(0, 0, 0, .25) solid;
+}
+.toggle-off {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.toggle{
+  background-color: #000000;
+}
+.toggle-off:hover{
+  background-color: #000000;
+  color: var(--pink-w-black);
+}
+.toggle.off {
+  border-color: rgba(0, 0, 0, .25);
 }
 
 .card{

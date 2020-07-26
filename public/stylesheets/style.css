@@ -77,17 +77,20 @@
 		}
 		.middle-box{
 			top: 220px;
-			height: 25px;
+			height: 45px;
 		}	
 		.mid-box-alt{
 			top: 900px;
-			height: 25px;
+			height: 45px;
 		}
 		
 		#sh-color.mid-box-alt{
 			top: 1400px;
 		}
 
+		#about-color.mid-box-alt{
+			top: 1420px;
+		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -118,7 +121,7 @@
 			margin: 0px;
 		}
 		#about-size.info-aside{
-			height: 510px;
+			height: 100%;
 			width: 300px;
 			display: flex;
 			flex-flow: column nowrap;
@@ -168,6 +171,17 @@
 			font-size: 1rem;
 
 		}
+		#about-order-ri.related-info{
+			width: 300px;
+			height: 100%;
+			font-size: 1rem;
+		}	
+		#about-order-c1.content1{
+			width: 300px;
+			height: 100%;
+			font-size: 1rem;
+		}
+
 	}
 
 	@media (min-width: 321px) and (max-width: 375px){
@@ -222,17 +236,19 @@
 		}
 		.middle-box{
 			top: 220px;
-			height: 25px;
+			height: 45px;
 		}
 		.mid-box-alt{
 			top: 900px;
-			height: 25px;
+			height: 45px;
 		}
 		
 		#sh-color.mid-box-alt{
 			top: 1300px;
 		}
-
+		#about-color.mid-box-alt{
+			top: 1420px;
+		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -274,7 +290,7 @@
 			margin: 0px;
 		}
 		#about-size.info-aside{
-			height: 500px;
+			height: 100%;
 			width: 300px;
 			display: flex;
 			flex-flow: column nowrap;
@@ -308,6 +324,16 @@
 			order: -1;
 			width: 300px;
 			height: 590px;
+			font-size: 1rem;
+		}
+		#about-order-ri.related-info{
+			width: 300px;
+			height: 100%;
+			font-size: 1rem;
+		}	
+		#about-order-c1.content1{
+			width: 300px;
+			height: 100%;
 			font-size: 1rem;
 		}
 
@@ -362,17 +388,19 @@
 		}
 		.middle-box{
 			top: 240px;
-			height: 25px;
+			height: 45px;
 		}
 		.mid-box-alt{
 			top: 900px;
-			height: 25px;
+			height: 45px;
 		}
 		
 		#sh-color.mid-box-alt{
 			top: 1190px;
 		}
-		
+		#about-color.mid-box-alt{
+			top: 1240px;
+		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -414,7 +442,7 @@
 			margin: 0px 10px -10px 10px;
 		}
 		#about-size.info-aside{
-			height: 380px;
+			height: 100%;
 			width: 350px;
 			display: flex;
 			flex-flow: column nowrap;
@@ -450,6 +478,17 @@
 			height: 550px;
 			font-size: 1rem;
 		}
+		#about-order-ri.related-info{
+			width: 350px;
+			height: 100%;
+			font-size: 1rem;
+		}	
+		#about-order-c1.content1{
+			width: 350px;
+			height: 100%;
+			font-size: 1rem;
+		}
+
 		
 	}
 	@media (min-width: 600px) and (max-width: 767px){
@@ -512,6 +551,9 @@
 		#sh-color.mid-box-alt{
 			top: 1150px;
 		}
+		#about-color.mid-box-alt{
+			top: 1170px;
+		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -553,7 +595,7 @@
 			margin: 0px;
 		}
 		#about-size.info-aside{
-			height: 280px;
+			height: 100%;
 			width: 550px;
 			display: flex;
 			flex-flow: column nowrap;
@@ -589,6 +631,17 @@
 			height: 500px;
 			font-size: 1rem;
 		}
+		#about-order-ri.related-info{
+			width: 550px;
+			height: 100%;
+			font-size: 1rem;
+		}	
+		#about-order-c1.content1{
+			width: 550px;
+			height: 100%;
+			font-size: 1rem;
+		}
+
 		
 	}
 
@@ -651,6 +704,9 @@
 		#sh-color.mid-box-alt{
 			top: 950px;
 		}
+		#about-color.mid-box-alt{
+			top: 1000px;
+		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -692,7 +748,7 @@
 			margin: 0px 10px -10px 10px;
 		}
 		#about-size.info-aside{
-			height: 280px;
+			height: 100%;
 			width: 600px;
 			display: flex;
 			flex-flow: column nowrap;
@@ -728,6 +784,17 @@
 			height: 550px;
 			font-size: 1rem;
 		}
+		#about-order-ri.related-info{
+			width: 600px;
+			height: 100%;
+			font-size: 1rem;
+		}	
+		#about-order-c1.content1{
+			width: 600px;
+			height: 100%;
+			font-size: 1rem;
+		}
+
 	}
 
 	@media (min-width: 1024px) and (max-width: 1349px){
@@ -785,6 +852,9 @@
 			top: 700px;
 			height: 75px;
 		}
+		#about-color.mid-box-alt{
+			top: 800px;
+		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -826,7 +896,7 @@
 			margin: 10px 10px -10px 10px;
 		}
 		#about-size.info-aside{
-			height: 200px;
+			height: 100%;
 			width: 860px;
 			display: flex;
 			flex-flow: column nowrap;
@@ -881,12 +951,12 @@
 		}
 		#about-order-ri.related-info{
 			width: 420px;
-			height: 600px;
+			height: 100%;
 			font-size: .9rem;
 		}	
 		#about-order-c1.content1{
 			width: 420px;
-			height: 600px;
+			height: 100%;
 			font-size: .9rem;
 		}
 
@@ -950,6 +1020,9 @@
 			#sh-color.mid-box-alt{
 				top: 900px;
 			}
+			#about-color.mid-box-alt{
+				top: 900px;
+			}
 			.nav-buttons{
 				display: inline-flex;
 				flex-flow: row wrap;
@@ -991,7 +1064,7 @@
 				margin: 10px 30px -10px 30px;
 			}
 			#about-size.info-aside{
-				height: 250px;
+				height: 100%;
 				width: 1210px;
 				display: flex;
 				flex-flow: row wrap;
@@ -1045,13 +1118,13 @@
 			}
 			#about-order-ri.related-info{
 				width: 595px;
-				height: 900px;
-				font-size: 1.2rem;
+				height: 100%;
+				font-size: 1rem;
 			}
 			#about-order-c1.content1{
 				width: 595px;
-				height: 900px;
-				font-size: 1.2rem;
+				height: 100%;
+				font-size: 1rem;
 			}
 			
 		}
@@ -1116,6 +1189,9 @@
 		#sh-color.mid-box-alt{
 			top: 1200px;
 		}
+		#about-color.mid-box-alt{
+			top: 1200px;
+		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -1157,13 +1233,14 @@
 			margin: 10px 30px -30px 30px;
 		}
 		#about-size.info-aside{
-			height: 360px;
+			height: 100%;
 			width: 1860px;
 			display: flex;
 			flex-flow: row wrap;
 		}
 		.about-info-aside{
-			margin: 10px 30px -30px 30px;
+			margin: 10px 30px 30px 30px;
+			font-size: 1.7rem;
 		}
 		#sh-border{
 			height: 80px;
@@ -1211,13 +1288,13 @@
 		}
 		#about-order-ri.related-info{
 			width: 920px;
-			height: 1500px;
-			font-size: 2rem;
+			height: 100%;
+			font-size: 1.65rem;
 		}
 		#about-order-c1.content1{
 			width: 920px;
-			height: 1500px;
-			font-size: 2rem;
+			height: 100%;
+			font-size: 1.65rem;
 		}
 
 	}

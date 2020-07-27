@@ -774,7 +774,7 @@
 			height: 75px;
 		}
 		.mid-box-alt{
-			top: 700px;
+			top: 740px;
 			height: 75px;
 		}
 		#about-color.mid-box-alt{
@@ -802,7 +802,7 @@
 			font-size: .9rem;
 		}
 		#sh-size.info-aside{
-			height: 300px;
+			height: 320px;
 			width: 860px;
 			display: flex;
 			flex-flow: row wrap;		
@@ -817,18 +817,10 @@
 		.about-info-aside{
 			margin: 10px 10px -10px 10px;
 		}
-		#sh-border{
-			height: 40px;
-			border-left: solid;
-			border-left-width: 3px;
-			margin-top: 10px;
-			padding-top: 0px;
-
-		}
 		.sh-numbers{
 			margin: 0px 30px;
 			padding: 0px 10px 0px 10px;
-			font-size: .65em;
+			font-size: 1em;
 		}
 		
 		.related-info{
@@ -971,14 +963,6 @@
 			}
 			.about-info-aside{
 				margin: 10px 30px -10px 30px;
-			}
-			#sh-border{
-				height: 50px;
-				border-left: solid;
-				border-left-width: 3px;
-				margin-top: 0px;
-				padding-top: 10px;
-
 			}
 			.sh-numbers{
 				margin: 0px 30px;
@@ -1129,14 +1113,6 @@
 			margin: 10px 30px 30px 30px;
 			font-size: 1.7rem;
 		}
-		#sh-border{
-			height: 80px;
-			border-left: solid;
-			border-left-width: 3px;
-			margin-top: 20px;
-			padding-top: 10px;
-
-		}
 		.sh-numbers{
 			margin: 20px 30px 0px 30px;
 			padding: 0px 10px 0px 10px;
@@ -1189,14 +1165,8 @@
 	.header-container{
 		margin-bottom: 30px;
 	}
-	
 	#home{
 	}
-	
-	#sh-border{
-		color: var(--aqua-w-black);
-	}
-	
 	.hometag {
 			background-color: white;
 			border-color: white;

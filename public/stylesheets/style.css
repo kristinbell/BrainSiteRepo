@@ -107,36 +107,19 @@
 		}
 		.info-aside{
 			width: 300px;
-			height: 400px;
+			height: 100%;
+			display: flex;
+			flex-flow: column nowrap;
 			font-size: 1rem;
 		}
 		#sh-size.info-aside{
-			height: 700px;
+			height: 100%;
 			width: 300px;
 			display: flex;
 			flex-flow: column nowrap;		
 		}
 		
 		.sh-info-aside{
-			margin: 0px;
-		}
-		#about-size.info-aside{
-			height: 100%;
-			width: 300px;
-			display: flex;
-			flex-flow: column nowrap;
-		}
-		.about-info-aside{
-			margin: 0px;
-		}
-		#dep-size.info-aside{
-			height: 510px;
-			width: 300px;
-			display: flex;
-			flex-flow: column nowrap;		
-		}
-		
-		.dep-info-aside{
 			margin: 0px;
 		}
 		
@@ -265,7 +248,9 @@
 		}
 		.info-aside{
 			width: 300px;
-			height: 400px;
+			height: 100%;
+			display: flex;
+			flex-flow: column nowrap;
 			font-size: 1rem;
 		}
 		#sh-size.info-aside{
@@ -279,25 +264,6 @@
 			margin: 0px;
 		}
 		
-		#dep-size.info-aside{
-			height: 500px;
-			width: 300px;
-			display: flex;
-			flex-flow: column nowrap;		
-		}
-		
-		.dep-info-aside{
-			margin: 0px;
-		}
-		#about-size.info-aside{
-			height: 100%;
-			width: 300px;
-			display: flex;
-			flex-flow: column nowrap;
-		}
-		.about-info-aside{
-			margin: 0px;
-		}
 		.sh-numbers{
 			margin: 0px;
 			padding: 0px;
@@ -417,7 +383,9 @@
 		}
 		.info-aside{
 			width: 350px;
-			height: 400px;
+			height: 100%;
+			display: flex;
+			flex-flow: column nowrap;
 			font-size: .9rem;
 		}
 		#sh-size.info-aside{
@@ -430,22 +398,8 @@
 		.sh-info-aside{
 			margin: 0px 10px -10px 10px;
 		}
-		
-		#dep-size.info-aside{
-			height: 380px;
-			width: 350px;
-			display: flex;
-			flex-flow: column nowrap;		
-		}
-		
 		.dep-info-aside{
 			margin: 0px 10px -10px 10px;
-		}
-		#about-size.info-aside{
-			height: 100%;
-			width: 350px;
-			display: flex;
-			flex-flow: column nowrap;
 		}
 		.about-info-aside{
 			margin: 0px 10px -10px 10px;
@@ -570,7 +524,9 @@
 		}
 		.info-aside{
 			width: 550px;
-			height: 250px;
+			height: 100%;
+			display: flex;
+			flex-flow: column nowrap;
 			font-size: 1rem;
 		}
 		#sh-size.info-aside{
@@ -584,25 +540,6 @@
 			margin: 0px;
 		}
 		
-		#dep-size.info-aside{
-			height: 280px;
-			width: 550px;
-			display: flex;
-			flex-flow: column nowrap;		
-		}
-		
-		.dep-info-aside{
-			margin: 0px;
-		}
-		#about-size.info-aside{
-			height: 100%;
-			width: 550px;
-			display: flex;
-			flex-flow: column nowrap;
-		}
-		.about-info-aside{
-			margin: 0px;
-		}
 		.sh-numbers{
 			margin: 0px;
 			padding: 0px;
@@ -723,7 +660,9 @@
 		}
 		.info-aside{
 			width: 600px;
-			height: 300px;
+			height: 100%;
+			display: flex;
+			flex-flow: column nowrap;
 			font-size: 1rem;
 		}
 		#sh-size.info-aside{
@@ -735,23 +674,9 @@
 		
 		.sh-info-aside{
 			margin: 0px 10px -10px 10px;
-		}
-		
-		#dep-size.info-aside{
-			height: 280px;
-			width: 600px;
-			display: flex;
-			flex-flow: column nowrap;		
-		}
-		
+		}		
 		.dep-info-aside{
 			margin: 0px 10px -10px 10px;
-		}
-		#about-size.info-aside{
-			height: 100%;
-			width: 600px;
-			display: flex;
-			flex-flow: column nowrap;
 		}
 		.about-info-aside{
 			margin: 0px 10px -10px 10px;
@@ -870,8 +795,10 @@
 			justify-content: center;
 		}
 		.info-aside{
-			width: 600px;
-			height: 400px;
+			width: 860px;
+			height: 100%;
+			display: flex;
+			flex-flow: column nowrap;
 			font-size: .9rem;
 		}
 		#sh-size.info-aside{
@@ -884,22 +811,8 @@
 		.sh-info-aside{
 			margin: 10px 10px -10px 10px;
 		}
-		
-		#dep-size.info-aside{
-			height: 200px;
-			width: 860px;
-			display: flex;
-			flex-flow: row wrap;		
-		}
-		
 		.dep-info-aside{
 			margin: 10px 10px -10px 10px;
-		}
-		#about-size.info-aside{
-			height: 100%;
-			width: 860px;
-			display: flex;
-			flex-flow: column nowrap;
 		}
 		.about-info-aside{
 			margin: 10px 10px -10px 10px;
@@ -1038,8 +951,10 @@
 				justify-content: center;
 			}
 			.info-aside{
-				width: 950px;
-				height: 400px;
+				width: 1210px;
+				height: 100%;
+				display: flex;
+				flex-flow: column nowrap;
 				font-size: 1.2rem;
 			}
 			#sh-size.info-aside{
@@ -1048,26 +963,11 @@
 				display: flex;
 				flex-flow: row wrap;		
 			}
-			
 			.sh-info-aside{
 				margin: 10px 30px -10px 30px;
 			}
-			
-			#dep-size.info-aside{
-				height: 250px;
-				width: 1210px;
-				display: flex;
-				flex-flow: row wrap;		
-			}
-			
 			.dep-info-aside{
 				margin: 10px 30px -10px 30px;
-			}
-			#about-size.info-aside{
-				height: 100%;
-				width: 1210px;
-				display: flex;
-				flex-flow: row wrap;
 			}
 			.about-info-aside{
 				margin: 10px 30px -10px 30px;
@@ -1207,8 +1107,10 @@
 			justify-content: center;
 		}
 		.info-aside{
-			width: 950px;
-			height: 400px;
+			width: 1860px;
+			height: 100%;
+			display: flex;
+			flex-flow: column nowrap;
 			font-size: 2rem;
 		}
 		#sh-size.info-aside{
@@ -1217,26 +1119,11 @@
 			display: flex;
 			flex-flow: row wrap;		
 		}
-		
 		.sh-info-aside{
 			margin: 10px 30px -30px 30px;
 		}
-		
-		#dep-size.info-aside{
-			height: 360px;
-			width: 1860px;
-			display: flex;
-			flex-flow: row wrap;		
-		}
-		
 		.dep-info-aside{
 			margin: 10px 30px -30px 30px;
-		}
-		#about-size.info-aside{
-			height: 100%;
-			width: 1860px;
-			display: flex;
-			flex-flow: row wrap;
 		}
 		.about-info-aside{
 			margin: 10px 30px 30px 30px;

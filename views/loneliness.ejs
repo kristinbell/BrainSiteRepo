@@ -11,7 +11,8 @@
             
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
-            <link href="stylesheets/mobile.css" type="text/css" rel="stylesheet">                                               
+            <link href="stylesheets/mobile.css" type="text/css" rel="stylesheet">
+            <link href="stylesheets/loneliness.css" type="text/css" rel="stylesheet">                                               
         <title>Loneliness</title>
        
      </head>
@@ -58,8 +59,36 @@
         </aside>
     
         <main class="page">
-            <section class="related-info">Other Info.</section>
-            <section class="content1">Blah blah</section>
+            <section class="related-info">
+                <div class="container">
+                    <div class="row">
+                      <div class="col center-block">
+                        <form id="postMessage">
+                          <div class="form-group title">
+                            <h2>Chat With Us!</h2>
+                          </div>
+                          <div class="form-group">
+                            <label for="name">Username</label>
+                            <input type="text" class="form-control" id="lonelinessPostName">
+                          </div>
+                          <div class="form-group">
+                            <label for="message">How are you feeling today?</label>
+                            <textarea class="form-control" id="lonelinessPostBody" required></textarea>
+                          </div>
+                          <div class="button-container">
+                            <button type="submit" class="btn btn-primary submitPost">Submit</button>
+                            <button type="submit" class="btn btn-secondary clearForm">Reset</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <section class="content1 board-content">
+                <div class="post-container">
+                    <div id="posts"></div>
+                </div>
+            </section>
         </main>
     
         <div class="mid-box-alt" id="lone-color" ></div>
@@ -67,6 +96,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/mobile.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script type="text/javascript" src="javascripts/discussionBoard.js"></script>
     
     </body>
     

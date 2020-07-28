@@ -1,0 +1,64 @@
+.bubble {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    background: #FFDC00;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+    margin-top: 30px;
+    box-shadow: 0 1px .5px rgba(black,.13)
+  }
+
+.post-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction:column-reverse;
+}
+
+.center-block {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #212529;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-around;
+}
+
+.btn-primary, .btn-secondary {
+  width: 48%;
+}
+
+form {
+  width: 100%;
+}
+
+.datetime {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.5em;
+}
+

@@ -56,9 +56,8 @@ $(function() {
                     console.log(response)
                 }
             })
+            $(this).remove();
         }  
-        
-        $(this).remove();
     });
 })
 

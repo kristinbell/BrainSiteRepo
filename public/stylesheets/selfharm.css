@@ -152,8 +152,11 @@ a.card-link:focus{
   text-decoration: none;
 }
 a.card-link:hover{
-  color: var(--aqua-w-black);
+  color: var(--purple-w-white);
   text-decoration: none;
+}
+a:hover{
+  color: var(--purple-w-white);
 }
 h5.small-caps{
   font-variant: small-caps;

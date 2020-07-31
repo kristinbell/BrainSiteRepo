@@ -7,7 +7,7 @@ var bodyParser = require('body-parser')
 var mongoose = require('mongoose');
 require('dotenv').config();
 var mongoDB = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@brainsparkcluster.sjfbl.mongodb.net/${process.env.DATABASE}?retryWrites=true&w=majority`;
-mongoose.connect(mongoDB, { useNewUrlParser: true });
+mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 

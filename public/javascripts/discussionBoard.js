@@ -64,15 +64,15 @@ $(function() {
 function createCard(id, username, body, formattedDate) {
     var li = "<div class=\"bubble-container\" data-id=\""+ id +"\" style=\"width: 100%;\">" 
         + "<div class=\"bubble\">" 
-        + "<h5 class=\"card-title\">" 
+        + "<h5 class=\"card-title small-caps\">" 
         + username 
         + "</h5>" 
-        + "<h6 class=\"card-subtitle mb-2 text-muted\">" 
+        + "<h6 class=\"card-subtitle mb-2\">" 
         + body 
         + "</h6>"
-        + "<h6 class=\"card-subtitle datetime mb-2 text-muted\">" 
+        + "<p class=\"card-subtitle datetime mb-2\">" 
         + formattedDate.toLocaleString();
-        + "</h6>"
+        + "</p>"
         + "</div>"
         + "</div>" ;
     return li;

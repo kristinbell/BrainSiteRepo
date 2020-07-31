@@ -164,6 +164,18 @@
 			height: 100%;
 			font-size: 1rem;
 		}
+		
+		#lone-order-ri.related-info{
+			width: 300px;
+			height: 100%;
+			font-size: 1rem;
+		}	
+		#lone-order-c1.content1{
+			width: 300px;
+			height: 100%;
+			font-size: 1rem;
+		}
+
 
 	}
 
@@ -302,6 +314,17 @@
 			height: 100%;
 			font-size: 1rem;
 		}
+		#lone-order-ri.related-info{
+			width: 300px;
+			height: 100%;
+			font-size: 1rem;
+		}	
+		#lone-order-c1.content1{
+			width: 300px;
+			height: 100%;
+			font-size: 1rem;
+		}
+
 
 	}
 	
@@ -442,7 +465,16 @@
 			height: 100%;
 			font-size: 1rem;
 		}
-
+		#lone-order-ri.related-info{
+			width: 350px;
+			height: 100%;
+			font-size: 1rem;
+		}	
+		#lone-order-c1.content1{
+			width: 350px;
+			height: 100%;
+			font-size: 1rem;
+		}
 		
 	}
 	@media (min-width: 600px) and (max-width: 767px){
@@ -574,6 +606,16 @@
 			font-size: 1rem;
 		}	
 		#about-order-c1.content1{
+			width: 550px;
+			height: 100%;
+			font-size: 1rem;
+		}
+		#lone-order-ri.related-info{
+			width: 550px;
+			height: 100%;
+			font-size: 1rem;
+		}	
+		#lone-order-c1.content1{
 			width: 550px;
 			height: 100%;
 			font-size: 1rem;
@@ -719,6 +761,16 @@
 			height: 100%;
 			font-size: 1rem;
 		}
+		#lone-order-ri.related-info{
+			width: 600px;
+			height: 100%;
+			font-size: 1rem;
+		}	
+		#lone-order-c1.content1{
+			width: 600px;
+			height: 100%;
+			font-size: 1rem;
+		}
 
 	}
 
@@ -860,6 +912,16 @@
 			font-size: .9rem;
 		}	
 		#about-order-c1.content1{
+			width: 420px;
+			height: 100%;
+			font-size: .9rem;
+		}
+		#lone-order-ri.related-info{
+			width: 420px;
+			height: 100%;
+			font-size: .9rem;
+		}	
+		#lone-order-c1.content1{
 			width: 420px;
 			height: 100%;
 			font-size: .9rem;
@@ -1010,6 +1072,16 @@
 				height: 100%;
 				font-size: 1rem;
 			}
+			#lone-order-ri.related-info{
+				width: 595px;
+				height: 100%;
+				font-size: 1rem;
+			}
+			#lone-order-c1.content1{
+				width: 595px;
+				height: 100%;
+				font-size: 1rem;
+			}
 			
 		}
 
@@ -1155,6 +1227,16 @@
 			font-size: 1.65rem;
 		}
 		#about-order-c1.content1{
+			width: 920px;
+			height: 100%;
+			font-size: 1.65rem;
+		}
+		#lone-order-ri.related-info{
+			width: 920px;
+			height: 100%;
+			font-size: 1.65rem;
+		}
+		#lone-order-c1.content1{
 			width: 920px;
 			height: 100%;
 			font-size: 1.65rem;

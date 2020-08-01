@@ -1,16 +1,18 @@
+
 		// Start of snippet from: https://developers.google.com/youtube/iframe_api_reference
 		var tag = document.createElement('script');
 		tag.src = "https://www.youtube.com/iframe_api";
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 		var players = []; // would contain 1 player for each iframe video
+		var player;
 		function onYouTubeIframeAPIReady()
 		{
-			var allMovieIframes = document.getElementById("").getElementsByTagName('iframe');
+			var allMovieIframes = document.getElementById("moviesCarousel").getElementsByTagName('iframe');
 			for (currentIFrame of allMovieIframes)
 			{
-				players.push(new YT.Player(
-					currentIFrame.id, // the target iframe video, here it is  either katniss, rancho, or logan
+				players.push(new YT.Player('player',
+					//currentIFrame.id, // the target iframe video, here it is  either katniss, rancho, or logan
 					{ events: { 'onStateChange': onPlayerStateChange } }
 				));
 			}
@@ -24,7 +26,7 @@
 				// If any player has been detected to be currently playing or buffering, pause the carousel from sliding
 				// .carousel('pause') - Stops the carousel from cycling through items.
 				// Reference: https://getbootstrap.com/docs/4.4/components/carousel/#methods
-				$('').carousel('pause');
+				$('moviesCarousel').carousel('pause');
 			}
 			else
 			{
@@ -36,7 +38,7 @@
 				//     4. wasn't totally played from the start
 				//     5. and literally any form where the video timer isn't running ;)
 				//     - then the carousel would now resume sliding.
-				$('').carousel();
+				$('moviesCarousel').carousel();
 			}
 		}
 		// End of snippet from Youtube iframe API

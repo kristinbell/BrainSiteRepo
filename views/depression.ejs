@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" id="pgs">
-    <head>
+    <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" 
+        type="image/png" 
+        href="images/brainicon-06.png">
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -12,8 +15,8 @@
             <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
-            <link href="stylesheets/mobile.css" type="text/css" rel="stylesheet">
             <link href="stylesheets/depression.css" type="text/css" rel="stylesheet">
+            <link href="stylesheets/mobile.css" type="text/css" rel="stylesheet">
         <title>Depression</title>
     </head>
 
@@ -66,51 +69,51 @@
                 </div>
                 <div class="relaxation">
                     <div class="container">
-                        <div id="moviesCarousel" class="carousel slide align-middle" data-ride="carousel" data-interval="10000" data-pause="hover">
+                        <div id="moviesCarousel" class="carousel slide align-middle" data-interval="false" data-pause="hover">
                             <!-- The carousel containing the Youtube iframe videos -->
                             <!-- Remember to add the ?enablejsapi=1 in the Youtube embed link as described in: -->
                             <!-- https://developers.google.com/youtube/iframe_api_reference#Example_Video_Player_Constructors -->
                             <div class="carousel-inner embed-responsive embed-responsive-16by9">
                                 <div class="carousel-item embed-responsive-item active">
-                                    <iframe src="https://www.youtube.com/embed/y7e-GC6oGhg?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" src="https://www.youtube.com/embed/y7e-GC6oGhg?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen ></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/77ZozI0rw7w?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/77ZozI0rw7w?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XMsp0TBTgxQ?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/XMsp0TBTgxQ?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vwIUJbIU57s?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/vwIUJbIU57s?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7bABrVM4wWA?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/7bABrVM4wWA?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nbMgWm6C0GQ?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/nbMgWm6C0GQ?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zXFP0CQXH1I?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/zXFP0CQXH1I?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f77SKdyn-1Y?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/f77SKdyn-1Y?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FMrtSHAAPhM?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/FMrtSHAAPhM?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GHIlzZpkkTQ?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/GHIlzZpkkTQ?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q76bMs-NwRk?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/q76bMs-NwRk?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                             </div>                            
                             <a class="carousel-control-prev" href="#moviesCarousel" role="button" data-slide="prev">
-                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                <i class="fa fa-angle-left" id="slide-nav" aria-hidden="true"></i>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#moviesCarousel" role="button" data-slide="next">
-                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <i class="fa fa-angle-right" id="slide-nav" aria-hidden="true"></i>
                                 <span class="sr-only">Next</span>
                             </a> 
 
@@ -134,35 +137,35 @@
             </div>   
             <div class="yoga">
                 <div class="container">
-                    <div id="moviesCarousel2" class="carousel slide align-middle" data-ride="carousel" data-interval="12000" data-pause="hover">
+                    <div id="moviesCarousel2" class="carousel slide align-middle" data-interval="false" data-pause="hover">
                             <!-- The carousel containing the Youtube iframe videos -->
                             <!-- Remember to add the ?enablejsapi=1 in the Youtube embed link as described in: -->
                             <!-- https://developers.google.com/youtube/iframe_api_reference#Example_Video_Player_Constructors -->
                         
                             <div class="carousel-inner embed-responsive embed-responsive-16by9">
                                 <div class="carousel-item embed-responsive-item active">
-                                    <iframe src="https://www.youtube.com/embed/VdIX8auOH_M?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" src="https://www.youtube.com/embed/VdIX8auOH_M?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wRVdPmv1dcQ?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/wRVdPmv1dcQ?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_YijAJ5odC0?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/_YijAJ5odC0?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F28MGLlpP90?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/F28MGLlpP90?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                                 <div class="carousel-item embed-responsive-item" >
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VD7Brg0geVA?enablejsapi=1" allowfullscreen></iframe>
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/VD7Brg0geVA?enablejsapi=1&origin=http://localhost:3000/depression" allowfullscreen></iframe>
                                 </div>
                             </div>
                                                        
                             <a class="carousel-control-prev" href="#moviesCarousel2" role="button" data-slide="prev">
-                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                <i class="fa fa-angle-left" id="slide-nav" aria-hidden="true"></i>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#moviesCarousel2" role="button" data-slide="next">
-                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <i class="fa fa-angle-right" id="slide-nav" aria-hidden="true"></i>
                                 <span class="sr-only">Next</span>
                             </a> 
                 
@@ -191,10 +194,11 @@
             
         </main>
     <!-- jQuery first, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- ><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api" ></script>
     
     <script type="text/javascript" src="javascripts/mobile.js"></script>
     <script type="text/javascript" src="javascripts/depression.js"></script>

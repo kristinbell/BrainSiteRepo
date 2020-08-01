@@ -1,0 +1,9 @@
+.related-info {
+    overflow-y: scroll;
+}
+
+@media (max-width: 1919px) and (min-width: 1350px) {
+    .related-info {
+        height: 600px;
+    }
+}

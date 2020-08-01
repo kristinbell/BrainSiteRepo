@@ -40,6 +40,12 @@ label {
   position: relative;
 }
 
+.fa{
+  color: var(--purple-w-black);
+  font-size: 70px;
+  font-weight: 800;
+}
+
 .carousel-inner{
   border-color: #000000;
   border-style: solid;

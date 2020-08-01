@@ -15,75 +15,48 @@ label {
 }
 
 .relaxation{
-  padding: 10px;
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+  margin: 20px 0px;
+  background-color: var(--purple-w-black);
+  border-color: var(--purple-w-black);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
 }
 
 .yoga{
-  padding: 10px;
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+  margin: 20px 0px;
+  background-color: var(--purple-w-black);
+  border-color: var(--purple-w-black);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+
 }
 
-.video-slider {
-    width: 100%;
-    height: 30em;
-    background: var(--purple-w-black);
-    position: relative;
-    overflow: hidden;
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--purple-w-black);
-    border-radius: 10px;
-    
-  }
-.slide {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    height: 30em;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    padding: 20px;
-    
-  }
-.slide:first-child{
-    left: 0;
-  }
+.slide{
+  position: relative;
+}
+/*
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#BF77FD' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
 
-.video{
-    height: 100%;
-    width: 100%;
-    border:0;
-  }
-  
-.slide-arrow{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 45%;
-    width: 15%;
-    cursor: pointer;
-    opacity: .3;
-    color: var(--purple-w-black);
-    
-  }
-.slide-arrow:hover{
-    opacity: 1;
-  }
-.slide-arrow:after{
-    content: "\25c0";
-    text-align: center;
-    display: block;
-    height: 10%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 25px;
-    font-size: 3em;
-  }
-.slide-arrow.right:after{
-    content: "\25b6";
-  }
-.slide-arrow.right{
-    left: auto;
-    right: 45px;
-  }
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#BF77FD' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+*/
+.carousel{
+  border-color: #000000;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+}
+
+.carousel-indicators{
+  padding-top: 10px;
+  border: none;
+}

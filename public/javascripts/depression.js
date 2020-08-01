@@ -1,35 +1,45 @@
-$(document).ready(function () {
-		var pos = 0,
-			slides = $('.slide'),
-			numOfSlides = slides.length;
-
-		function nextSlide() {
-			// `[]` returns a vanilla DOM object from a jQuery object/collection
-			slides[pos].video.stopVideo()
-			slides.eq(pos).animate({ left: '-100%' }, 500);
-			pos = (pos >= numOfSlides - 1 ? 0 : ++pos);
-			slides.eq(pos).css({ left: '100%' }).animate({ left: 0 }, 500);
+		// Start of snippet from: https://developers.google.com/youtube/iframe_api_reference
+		var tag = document.createElement('script');
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		var players = []; // would contain 1 player for each iframe video
+		function onYouTubeIframeAPIReady()
+		{
+			var allMovieIframes = document.getElementById("").getElementsByTagName('iframe');
+			for (currentIFrame of allMovieIframes)
+			{
+				players.push(new YT.Player(
+					currentIFrame.id, // the target iframe video, here it is  either katniss, rancho, or logan
+					{ events: { 'onStateChange': onPlayerStateChange } }
+				));
+			}
 		}
-
-		function previousSlide() {
-			slides[pos].video.stopVideo()
-			slides.eq(pos).animate({ left: '100%' }, 500);
-			pos = (pos == 0 ? numOfSlides - 1 : --pos);
-			slides.eq(pos).css({ left: '-100%' }).animate({ left: 0 }, 500);
+		function onPlayerStateChange(event) // triggered everytime ANY iframe video player among the "players" list is played, paused, ended, etc.
+		{
+			// Check if any iframe video is being played (or is currently buffering to be played)
+			// Reference: https://developers.google.com/youtube/iframe_api_reference#Events
+			if (event.data == YT.PlayerState.PLAYING || event.data == YT.PlayerState.BUFFERING)
+			{
+				// If any player has been detected to be currently playing or buffering, pause the carousel from sliding
+				// .carousel('pause') - Stops the carousel from cycling through items.
+				// Reference: https://getbootstrap.com/docs/4.4/components/carousel/#methods
+				$('').carousel('pause');
+			}
+			else
+			{
+				// If there are no currently playing nor buffering videos, resume the sliding of the carousel.
+				// This means that once the current video is in a state that is not playing (aside from buffering), either it was:
+				//     1. paused intentionally
+				//     2. paused as an effect of a slide
+				//     3. video has ended
+				//     4. wasn't totally played from the start
+				//     5. and literally any form where the video timer isn't running ;)
+				//     - then the carousel would now resume sliding.
+				$('').carousel();
+			}
 		}
+		// End of snippet from Youtube iframe API
+ 
 
-		$('.left').click(previousSlide);
-		$('.right').click(nextSlide);
-	})
-
-	function onYouTubeIframeAPIReady() {
-		$('.slide').each(function (index, slide) {
-			// Get the `.video` element inside each `.slide`
-			var iframe = $(slide).find('.video')[0]
-			// Create a new YT.Player from the iFrame, and store it on the `.slide` DOM object
-			slide.video = new YT.Player(iframe)
-		})
-	}
-	
-
-/* Got jquery video slider from: https://github.com/RobertAKARobin/jquery-video-slider/blob/gh-pages/index.html */
+		/* Got video slider info. from: https://stackoverflow.com/questions/52924820/pause-bootstrap-carousel-when-playing-youtube-video */

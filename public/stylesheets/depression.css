@@ -40,7 +40,7 @@ label {
   position: relative;
 }
 
-.fa{
+#slide-nav.fa{
   color: var(--purple-w-black);
   font-size: 70px;
   font-weight: 800;

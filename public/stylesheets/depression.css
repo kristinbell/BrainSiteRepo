@@ -59,9 +59,12 @@ label {
 }
 
 .carousel-control-next {
-  padding: 20px;
+  padding: 120px 20px 20px 20px;
+  height: 50%;
+  
 }
 
 .carousel-control-prev {
-  padding: 20px;
+  padding: 120px 20px 20px 20px;
+  height: 50%;
 }

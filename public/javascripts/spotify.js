@@ -17,6 +17,9 @@ $(function() {
     $('.card-body').on('click', function() {
         var link = $(this).attr('link')
 
+        $(".card-body").removeClass("active");
+        $(this).addClass("active");
+
         $('.spotify').animate({opacity:0}, 1000, function() {
             $('.spotify').attr("src", "https://open.spotify.com/embed/playlist/" + link);
         });

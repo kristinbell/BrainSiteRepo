@@ -1,0 +1,18 @@
+.related-info {
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.playlist-title {
+    text-decoration: underline;
+}
+
+@media (max-width: 1919px) and (min-width: 1350px) {
+    .related-info {
+        height: 600px;
+    }
+}
+
+.active {
+    background-color: #fd57bf;
+}

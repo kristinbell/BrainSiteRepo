@@ -23,6 +23,6 @@ $(function() {
         $('.spotify').animate({opacity:0}, 1000, function() {
             $('.spotify').attr("src", "https://open.spotify.com/embed/playlist/" + link);
         });
-        $('.spotify').delay(300).animate( {opacity:1}, 1000);
+        $('.spotify').delay(400).animate( {opacity:1}, 1000);
     }); 
 });

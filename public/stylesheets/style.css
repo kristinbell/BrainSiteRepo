@@ -79,18 +79,7 @@
 			top: 220px;
 			height: 45px;
 		}	
-		.mid-box-alt{
-			top: 900px;
-			height: 45px;
-		}
 		
-		#sh-color.mid-box-alt{
-			top: 1400px;
-		}
-
-		#about-color.mid-box-alt{
-			top: 1420px;
-		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -243,17 +232,7 @@
 			top: 220px;
 			height: 45px;
 		}
-		.mid-box-alt{
-			top: 900px;
-			height: 45px;
-		}
 		
-		#sh-color.mid-box-alt{
-			top: 1300px;
-		}
-		#about-color.mid-box-alt{
-			top: 1420px;
-		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -397,17 +376,7 @@
 			top: 240px;
 			height: 45px;
 		}
-		.mid-box-alt{
-			top: 900px;
-			height: 45px;
-		}
 		
-		#sh-color.mid-box-alt{
-			top: 1190px;
-		}
-		#about-color.mid-box-alt{
-			top: 1240px;
-		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -558,16 +527,7 @@
 			top: 340px;
 			height: 45px;
 		}
-		.mid-box-alt{
-			top: 800px;
-			height: 45px;
-		}
-		#sh-color.mid-box-alt{
-			top: 1150px;
-		}
-		#about-color.mid-box-alt{
-			top: 1170px;
-		}
+		
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -713,16 +673,7 @@
 			top: 420px;
 			height: 75px;
 		}
-		.mid-box-alt{
-			top: 650px;
-			height: 75px;
-		}
-		#sh-color.mid-box-alt{
-			top: 950px;
-		}
-		#about-color.mid-box-alt{
-			top: 1000px;
-		}
+		
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -871,13 +822,7 @@
 			top: 420px;
 			height: 75px;
 		}
-		.mid-box-alt{
-			top: 740px;
-			height: 75px;
-		}
-		#about-color.mid-box-alt{
-			top: 800px;
-		}
+		
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -1026,16 +971,7 @@
 				top: 420px;
 				height: 100px;
 			}
-			.mid-box-alt{
-				top: 800px;
-				height: 100px;
-			}
-			#sh-color.mid-box-alt{
-				top: 900px;
-			}
-			#about-color.mid-box-alt{
-				top: 900px;
-			}
+			
 			.nav-buttons{
 				display: inline-flex;
 				flex-flow: row wrap;
@@ -1182,17 +1118,7 @@
 			top: 620px;
 			height: 125px;
 		}
-		.mid-box-alt{
-			top: 900px;
-			height: 125px;
-		}
 		
-		#sh-color.mid-box-alt{
-			top: 1200px;
-		}
-		#about-color.mid-box-alt{
-			top: 1200px;
-		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -1292,8 +1218,7 @@
 	.header-container{
 		margin-bottom: 30px;
 	}
-	#home{
-	}
+	
 	.hometag {
 			background-color: white;
 			border-color: white;
@@ -1630,13 +1555,6 @@
 		left: 0px;
 		width: 100%;
 		z-index: 0;	
-	}	
-	
-	.mid-box-alt{
-			position: absolute;
-			left: 0px;
-			width: 100%;
-			z-index: 0;	
 	}	
 	
 

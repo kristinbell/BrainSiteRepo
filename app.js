@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser')
 var mongoose = require('mongoose');
+var cors = require('cors')
 require('dotenv').config();
 var mongoDB = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@brainsparkcluster.sjfbl.mongodb.net/${process.env.DATABASE}?retryWrites=true&w=majority`;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -30,6 +31,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/depression', depressionRouter);

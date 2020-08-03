@@ -68,3 +68,12 @@ label {
   padding: 120px 20px 20px 20px;
   height: 50%;
 }
+
+.modal-body {
+  text-align: center;
+}
+
+.memeImage {
+  height: auto;
+  width: 100%;
+}

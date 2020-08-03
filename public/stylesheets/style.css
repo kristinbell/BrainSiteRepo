@@ -1314,11 +1314,6 @@
 		background: linear-gradient(to bottom , #FFFFFF, 1%, var(--aqua-w-black) 100%);
 		
 	}
-	#shbutton:hover{
-		background: #000000;
-		background-color: #000000;
-		color: var(--aqua-w-black);
-	}
 	
 	.depression-div{
 		position: relative;
@@ -1330,44 +1325,28 @@
 	#depbutton {
 		background: linear-gradient(to bottom , #FFFFFF, 1%, var(--purple-w-black) 100%);
 	}
-	#depbutton:hover{
-		background: #000000;
-		background-color: #000000;
-		color: var(--purple-w-black);
-	}
-
+	
 	.anxiety-div{
-			position: relative;
-			z-index: 1;
-			width: 200px;
-			text-align: center;
+		position: relative;
+		z-index: 1;
+		width: 200px;
+		text-align: center;
 	}
 		
 	#anxbutton {
 		background: linear-gradient(to bottom , #FFFFFF, 1%, var(--pink-w-black) 100%);
 	}
-	#anxbutton:hover{
-		background: #000000;
-		background-color: #000000;
-		color: var(--pink-w-black);
-	}
-
 	.loneliness-div{
-				position: relative;
-				z-index: 1;
-				width: 200px;
-				text-align: center;
+		position: relative;
+		z-index: 1;
+		width: 200px;
+		text-align: center;
 	}
 			
 	#lonebutton {
 		background: linear-gradient(to bottom , #FFFFFF, 1%, var(--yellow-w-black) 100%);
 	}
-	#lonebutton:hover{
-		background: #000000;
-		background-color: #000000;
-		color: var(--yellow-w-black);
-	}
-
+	
 	.about-div{
 		position: relative;
 		z-index: 1;
@@ -1377,11 +1356,6 @@
 				
 	#aboutbutton {
 		background: linear-gradient(to bottom , #FFFFFF, 1%, var(--green-w-black) 100%);
-	}
-	#aboutbutton:hover{
-		background: #000000;
-		background-color: #000000;
-		color: var(--green-w-black);
 	}
 	
 	.nav-buttons{

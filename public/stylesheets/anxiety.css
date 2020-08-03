@@ -13,6 +13,68 @@
     }
 }
 
+
 .active {
-    background-color: #fd57bf;
+    background-color: var(--pink-w-black);
+    color: #000000;
+}
+
+.active:hover{
+    background-color: var(--green-w-black);
+    color: #000000;
+}
+
+.card-body:hover{
+    background-color: var(--green-w-black);
+    color: #000000;
+}
+
+
+h5.small-caps{
+    font-variant: small-caps;
+    color: #000000;
+    font-weight: 600;
+    font-size: 2rem;
+}
+h2.small-caps{
+        font-variant: small-caps;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+.playlists{
+    border-style: dotted;
+    border-color: var(--pink-w-black);
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+.content1{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.spotify-content{
+    
+    width: 100%;
+    height: 95%;
+    padding: 20px;
+    border-style: solid;
+    border-color: var(--pink-w-black);
+    border-width: 3px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--pink-w-black);
+
+}
+
+.spotify{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 3px;
+    border-radius: 10px;
 }

@@ -79,18 +79,7 @@
 			top: 220px;
 			height: 45px;
 		}	
-		.mid-box-alt{
-			top: 900px;
-			height: 45px;
-		}
 		
-		#sh-color.mid-box-alt{
-			top: 1400px;
-		}
-
-		#about-color.mid-box-alt{
-			top: 1420px;
-		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -186,7 +175,7 @@
 			height: 100%;
 			font-size: 1rem;
 		}
-
+		
 	}
 
 	@media (min-width: 321px) and (max-width: 375px){
@@ -243,17 +232,7 @@
 			top: 220px;
 			height: 45px;
 		}
-		.mid-box-alt{
-			top: 900px;
-			height: 45px;
-		}
 		
-		#sh-color.mid-box-alt{
-			top: 1300px;
-		}
-		#about-color.mid-box-alt{
-			top: 1420px;
-		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -344,7 +323,6 @@
 			height: 100%;
 			font-size: 1rem;
 		}
-
 	}
 	
 	@media (min-width: 376px) and (max-width: 599px){
@@ -398,17 +376,7 @@
 			top: 240px;
 			height: 45px;
 		}
-		.mid-box-alt{
-			top: 900px;
-			height: 45px;
-		}
 		
-		#sh-color.mid-box-alt{
-			top: 1190px;
-		}
-		#about-color.mid-box-alt{
-			top: 1240px;
-		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -504,7 +472,7 @@
 			height: 100%;
 			font-size: 1rem;
 		}
-		
+				
 	}
 	@media (min-width: 600px) and (max-width: 767px){
 		#home{
@@ -559,16 +527,7 @@
 			top: 340px;
 			height: 45px;
 		}
-		.mid-box-alt{
-			top: 800px;
-			height: 45px;
-		}
-		#sh-color.mid-box-alt{
-			top: 1150px;
-		}
-		#about-color.mid-box-alt{
-			top: 1170px;
-		}
+		
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -659,7 +618,7 @@
 			height: 100%;
 			font-size: 1rem;
 		}
-		
+			
 	}
 
 	@media (min-width: 768px) and (max-width: 1023px){
@@ -714,16 +673,7 @@
 			top: 420px;
 			height: 75px;
 		}
-		.mid-box-alt{
-			top: 650px;
-			height: 75px;
-		}
-		#sh-color.mid-box-alt{
-			top: 950px;
-		}
-		#about-color.mid-box-alt{
-			top: 1000px;
-		}
+		
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -819,7 +769,6 @@
 			height: 100%;
 			font-size: 1rem;
 		}
-
 	}
 
 	@media (min-width: 1024px) and (max-width: 1349px){
@@ -873,13 +822,7 @@
 			top: 420px;
 			height: 75px;
 		}
-		.mid-box-alt{
-			top: 740px;
-			height: 75px;
-		}
-		#about-color.mid-box-alt{
-			top: 800px;
-		}
+		
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -944,16 +887,6 @@
 			height: 600px;
 			font-size: .9rem;
 		}
-		#dep-order-ri.related-info{
-			width: 420px;
-			height: 600px;
-			font-size: .9rem;
-		}	
-		#dep-order-c1.content1{
-			width: 420px;
-			height: 600px;
-			font-size: .9rem;
-		}
 		#about-order-ri.related-info{
 			width: 420px;
 			height: 100%;
@@ -984,7 +917,7 @@
 			height: 100%;
 			font-size: .9rem;
 		}
-
+	
 	}
 
 	@media (min-width: 1350px) and (max-width: 1919px){
@@ -1038,16 +971,7 @@
 				top: 420px;
 				height: 100px;
 			}
-			.mid-box-alt{
-				top: 800px;
-				height: 100px;
-			}
-			#sh-color.mid-box-alt{
-				top: 900px;
-			}
-			#about-color.mid-box-alt{
-				top: 900px;
-			}
+			
 			.nav-buttons{
 				display: inline-flex;
 				flex-flow: row wrap;
@@ -1110,16 +1034,6 @@
 				height: 900px;
 				font-size: 1.2rem;
 			}
-			#dep-order-ri.related-info{
-				width: 595px;
-				height: 900px;
-				font-size: 1.2rem;
-			}
-			#dep-order-c1.content1{
-				width: 595px;
-				height: 900px;
-				font-size: 1.2rem;
-			}
 			#about-order-ri.related-info{
 				width: 595px;
 				height: 100%;
@@ -1150,7 +1064,7 @@
 				height: 100%;
 				font-size: 1rem;
 			}
-		}
+	}
 
 
 	@media (min-width: 1920px){
@@ -1204,17 +1118,7 @@
 			top: 620px;
 			height: 125px;
 		}
-		.mid-box-alt{
-			top: 900px;
-			height: 125px;
-		}
 		
-		#sh-color.mid-box-alt{
-			top: 1200px;
-		}
-		#about-color.mid-box-alt{
-			top: 1200px;
-		}
 		.nav-buttons{
 			display: inline-flex;
 			flex-flow: row wrap;
@@ -1278,16 +1182,6 @@
 			height: 1500px;
 			font-size: 2rem;
 		}
-		#dep-order-ri.related-info{
-			width: 920px;
-			height: 1500px;
-			font-size: 2rem;
-		}
-		#dep-order-c1.content1{
-			width: 920px;
-			height: 1500px;
-			font-size: 2rem;
-		}
 		#about-order-ri.related-info{
 			width: 920px;
 			height: 100%;
@@ -1318,7 +1212,7 @@
 			height: 100%;
 			font-size: 1.65rem;
 		}
-
+	
 	}
 	
 	.header-container{
@@ -1661,13 +1555,6 @@
 		left: 0px;
 		width: 100%;
 		z-index: 0;	
-	}	
-	
-	.mid-box-alt{
-			position: absolute;
-			left: 0px;
-			width: 100%;
-			z-index: 0;	
 	}	
 	
 

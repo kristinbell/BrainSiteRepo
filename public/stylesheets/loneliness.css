@@ -81,6 +81,9 @@ h2.small-caps{
     font-size: 2rem;
     font-weight: 600;
   }
+#main-title {
+  text-align: left;
+}
 .button-container {
   display: flex;
   margin-top: 5px;

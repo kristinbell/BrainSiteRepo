@@ -1,8 +1,24 @@
+@media (max-width: 599px){
+  .carousel-control-next {
+    top: -50px;
+    padding: 10px;
+    height: 50%;
+    
+  }
+
+  .carousel-control-prev {
+    top: -50px;
+    padding: 10px;
+    height: 50%;
+  }
+}
+
 h5.small-caps{
   font-variant: small-caps;
   color: #000000;
   font-weight: 600;
   font-size: 2rem;
+  text-align: center;
 }
 h2.small-caps{
     font-variant: small-caps;

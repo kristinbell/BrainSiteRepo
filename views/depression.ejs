@@ -34,8 +34,8 @@
                     <a href="loneliness" id="lonemobile">loneliness</a>
                     <a href="about" id="aboutmobile">about</a>
                 </div>
-                <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
-                    <i class="fa fa-bars"></i>
+                <a href="javascript:void(0);" class="icon" onclick="menuFunction()" title="menu">
+                    <span class="visually-hidden">menu</span><i class="fa fa-bars"></i>
                 </a>
             </div>
             
@@ -49,11 +49,11 @@
         </header>
     
         <nav class="navigation">
-            <div><a href="/" class="nav-button-link"><button class="nav-buttons" id="home-nav-button">home</button></a></div>
-            <div><a href="selfharm" class="nav-button-link"><button class="nav-buttons" id="self-harm-nav-button">self-harm</button></a></div>
-            <div><a href="anxiety" class="nav-button-link"><button class="nav-buttons" id="anxiety-nav-button">anxiety</button></a></div>
-            <div><a href="loneliness" class="nav-button-link"><button class="nav-buttons" id="loneliness-nav-button">loneliness</button></a></div>
-            <div><a href="about" class="nav-button-link"><button class="nav-buttons" id="about-nav-button">about</button></a></div>
+            <div aria-title="home"><a href="/" class="nav-button-link" title="home"><button class="nav-buttons" id="home-nav-button">home</button></a></div>
+            <div aria-title="self-harm"><a href="selfharm" class="nav-button-link" title="self-harm"><button class="nav-buttons" id="self-harm-nav-button">self-harm</button></a></div>
+            <div aria-title="anxiety"><a href="anxiety" class="nav-button-link" title="anxiety"><button class="nav-buttons" id="anxiety-nav-button">anxiety</button></a></div>
+            <div aria-title="loneliness"><a href="loneliness" class="nav-button-link" title="loneliness"><button class="nav-buttons" id="loneliness-nav-button">loneliness</button></a></div>
+            <div aria-title="about"><a href="about" class="nav-button-link" title="about"><button class="nav-buttons" id="about-nav-button">about</button></a></div>
         </nav>
         </div>
         
@@ -65,7 +65,7 @@
         <main class="page">
         
             <section class="related-info" id="dep-order-ri">
-                <div><h5 class="small-caps">relaxation videos</h5></div>
+                <div><h5 class="small-caps">relaxation videos<br>(click to play)</h5></div>
                 <div class="relaxation">
                     <div class="container">
                         <div id="moviesCarousel" class="carousel slide align-middle" data-interval="false" data-pause="hover">
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div><h5 class="small-caps">yoga, breathing & meditation</h5>
+                <div><h5 class="small-caps">yoga & meditation<br>(click to play)</h5>
                 </div>   
                 <div class="yoga">
                     <div class="container">
@@ -182,7 +182,7 @@
             
             <section class="content1" id="dep-order-c1">
                 <div id="memes">
-                    <h5 class="small-caps">Weekly Cute Pics! (Click to enlarge)</h5>
+                    <h5 class="small-caps">weekly cute pics <br>(click to enlarge)</h5>
                 </div>
                 <div class="relaxation">
                     <div class="container">
@@ -213,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-                <div><h5 class="small-caps">Weekly Memes! (Click to enlarge)</h5>
+                <div><h5 class="small-caps">weekly memes <br>(click to enlarge)</h5>
                 </div>   
                 <div class="yoga">
                     <div class="container">
@@ -251,7 +251,7 @@
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-body">
-                  <img class="imagepreview img-fluid" src="">
+                  <img class="imagepreview img-fluid" src="" alt="">
                 </div>
               </div>
             </div>

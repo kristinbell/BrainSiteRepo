@@ -34,6 +34,8 @@ $(function() {
                 var formattedDate = new Date(message.datetime_of_post);
                 var posts = $('#posts')
                 posts.append(createCard(message._id, message.username, message.body, formattedDate));
+                var board = $('.board-content');
+                board.scrollTop = board.scrollHeight;
             }
         })
     })

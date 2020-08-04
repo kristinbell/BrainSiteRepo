@@ -21,7 +21,7 @@ function initMap() {
       service.nearbySearch(
         {
           location: pos,
-          radius: 5000,
+          radius: 50000,
           keyword: 'hospital'
         },
         function(results, status, pagination) {
@@ -153,7 +153,7 @@ function mapsQuery(checkboxId) {
     
     var request = {
       location: { lat: pos.lat, lng: pos.lng },
-      radius: '2500',
+      radius: '50000',
       query: textQuery
     }
 

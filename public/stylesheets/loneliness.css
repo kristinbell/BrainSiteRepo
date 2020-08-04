@@ -157,3 +157,8 @@ h5.card-title{
   word-wrap: break-word;
  
 }
+
+.board-content {
+  overflow-y: scroll;
+  height: 900px !important;
+}

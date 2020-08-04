@@ -33,7 +33,7 @@ $(document).ready(function() {
 function createMeme(meme) {
     var memeElem = "<div class=\"carousel-item embed-responsive-item\">"
     + "<a href=\"#!\" class=\"memeModal\">"
-    + "<img class=\"memeImage\" class=\"d-block w-100\" src=\"" + meme.link + "\"></a></div>"
+    + "<img class=\"memeImage\" class=\"d-block w-100\" src=\"" + meme.link + "\" alt=\"image from imgur\"></a></div>"
     return memeElem;
 }
 

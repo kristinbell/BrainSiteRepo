@@ -1319,7 +1319,7 @@
 		width: 200px;
 		text-align: center;
 	}
-
+	
 	#shbutton {
 		background: linear-gradient(to bottom , #FFFFFF, 1%, var(--aqua-w-black) 100%);
 		
@@ -1403,6 +1403,7 @@
 		background-color: #000000;
 		color: #FFFFFF;
 	}
+	
 	
 	#self-harm-nav-button{
 		background-color: var(--aqua-w-black);

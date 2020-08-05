@@ -1,6 +1,7 @@
 # BrainSiteRepo
 
 This is a website created by Kristin Bell and James Fotheringham for CS Full Stack at Portland State University during the Summer of 2020.
+The site is currently live at: https://brainspark.herokuapp.com
 
 This website is a prototype for Brain Spark, a site that provides tools to users to help deal with mental health symptoms.
 Included in this website are the following: maps to locate services, videos, spotify playlists, memes, discussion board, about page.

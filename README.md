@@ -6,7 +6,7 @@ The site is currently live at: https://brainspark.herokuapp.com
 This website is a prototype for Brain Spark, a site that provides tools to users to help deal with mental health symptoms.
 Included in this website are the following: maps to locate services, videos, spotify playlists, memes, discussion board, about page.
 
-We utilized HTML, Javascript, Node.js, MongoDB, Express (EJS), SVG, and CSS to create this site.
+We utilized HTML, Bootstrap, Javascript, Node.js, MongoDB, Express (EJS), SVG, and CSS to create this site.
 
 We found code help from various docs and discussion boards online, and the following specific sites:
 

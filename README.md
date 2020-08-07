@@ -15,4 +15,7 @@ Instructions for the hambuger menu from https://www.w3schools.com/howto/howto_js
 Got video slider info. from: https://stackoverflow.com/questions/52924820/pause-bootstrap-carousel-when-playing-youtube-video
   and https://developers.google.com/youtube/iframe_api_reference
   
+Instructions for how to make a non-image thought bubble: https://www.sitepoint.com/pure-css3-speech-bubbles/
+
+
   

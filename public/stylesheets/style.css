@@ -858,7 +858,9 @@
 			height: 320px;
 			width: 860px;
 			display: flex;
-			flex-flow: row wrap;		
+			flex-flow: row wrap;
+			justify-content: center;
+			align-content: space-around;		
 		}
 		
 		.sh-info-aside{
@@ -1007,7 +1009,9 @@
 				height: 350px;
 				width: 1210px;
 				display: flex;
-				flex-flow: row wrap;		
+				flex-flow: row wrap;
+				justify-content: center;
+				align-content: space-around;		
 			}
 			.sh-info-aside{
 				margin: 10px 30px -10px 30px;
@@ -1154,7 +1158,9 @@
 			height: 560px;
 			width: 1860px;
 			display: flex;
-			flex-flow: row wrap;		
+			flex-flow: row wrap;
+			justify-content: center;
+			align-content: space-around;		
 		}
 		.sh-info-aside{
 			margin: 10px 30px -30px 30px;

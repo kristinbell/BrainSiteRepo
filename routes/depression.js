@@ -12,7 +12,7 @@ router.get('/get/:type', function(req, res) {
   if (req.params.type == "cute") {
     var url = `https://api.imgur.com/3/gallery/r/aww/top/week/1`
   } else if (req.params.type == "memes") {
-    var url = `https://api.imgur.com/3/gallery/r/memes/top/week/1`
+    var url = `https://api.imgur.com/3/gallery/r/EarthPorn/top/week/1`
   } else {
     res.status(err.status || 500);
     res.render('error');

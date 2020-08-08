@@ -20,7 +20,7 @@ $(document).ready(function() {
         success: function(response) {
             var memes = $('.memes')
             response.data.forEach(function(meme) {
-                if (meme.link.includes(".jpg")) {
+                if (meme.link.includes(".jpg") || meme.link.includes(".png") || meme.link.includes(".gif")) {
                     memes.append(createMeme(meme))
                 }
             })

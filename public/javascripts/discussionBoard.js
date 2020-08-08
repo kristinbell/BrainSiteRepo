@@ -48,17 +48,20 @@ $(function() {
     })
 
     $('#posts').on('click', '.bubble-container', function() {
-        if (confirm("Do you want to delete this post?")) {
-            $.ajax({
-                url: 'loneliness/' + $(this).data('id'),
-                method: 'DELETE',
-                contentType: 'application/json',
-                success: function(response) {
-                    console.log(response)
-                }
-            })
-            $(this).remove();
-        }  
+        if (($('#lonelinessPostName').attr('name') === $(this).data('name')) || $('#lonelinessPostName').attr('name') === "Admin")
+        {
+            if (confirm("Do you want to delete this post?")) {
+                $.ajax({
+                    url: 'loneliness/' + $(this).data('id'),
+                    method: 'DELETE',
+                    contentType: 'application/json',
+                    success: function(response) {
+                        console.log(response)
+                    }
+                })
+                $(this).remove();
+            }
+        }
     });
 
     $('#signUp').submit(function(event) {
@@ -102,7 +105,7 @@ $(function() {
 })
 
 function createCard(id, username, body, formattedDate) {
-    var li = "<div class=\"bubble-container\" data-id=\""+ id +"\" style=\"width: 100%;\">" 
+    var li = "<div class=\"bubble-container\" data-name=\"" + username +"\" data-id=\""+ id +"\" style=\"width: 100%;\">" 
         + "<div class=\"bubble\">" 
         + "<h5 class=\"card-title small-caps\">" 
         + username 

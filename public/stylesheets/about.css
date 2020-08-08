@@ -1,3 +1,4 @@
+
 a{
   text-decoration: none;
   color: #000000;
@@ -38,13 +39,21 @@ h2.small-caps{
 }
 
 #person{
-  width: 90%;
+  width: 95%;
   margin: 20px 10px 0px 10px;
 }
 .persontext{
-  padding: 20px 10px 10px 10px;
+  text-align: left;
+  padding: 20px 10px 0px 10px;
+  margin: 0px 10px 0px 10px;
 }
-
+#mountain{
+  width: 95%;
+  margin: 0 10px 10px 10px
+}
+#coronacat{
+  width: 49%;
+}
 @media (max-width: 320px) {
  }
 

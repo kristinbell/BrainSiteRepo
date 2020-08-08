@@ -93,3 +93,18 @@ label {
   height: auto;
   width: 100%;
 }
+
+.about-boxes{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+a#beck-link:link{
+  color: var(--purple-w-white);
+  text-decoration: none;
+}
+a#beck-link:visited{
+  color: var(--purple-w-white);
+  text-decoration: none;
+}

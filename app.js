@@ -22,8 +22,12 @@ var selfHarmRouter = require('./routes/selfharm');
 var lonelinessRouter = require('./routes/loneliness');
 var anxietyRouter = require('./routes/anxiety');
 var aboutRouter = require('./routes/about');
+var beckRouter = require('./routes/beck');
+var beckResultsRouter = require('./routes/beckresults');
+
 var auth = require('./routes/auth')
 var User = require('./models/user.js')
+
 
 var app = express();
 
@@ -53,6 +57,9 @@ app.use('/selfharm', selfHarmRouter);
 app.use('/loneliness', lonelinessRouter);
 app.use('/anxiety', anxietyRouter);
 app.use('/about', aboutRouter);
+app.use('/beck', beckRouter);
+app.use('/beckresults', beckResultsRouter);
+
 app.use('/auth', auth);
 
 passport.serializeUser(function(user, callback) {
@@ -86,6 +93,7 @@ passport.use(new localStrategy(function(username, password, done) {
   })
   .catch(err => console.log(err))
 }));
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

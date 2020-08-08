@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" id="pgs">
+    <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" 
+        type="image/png" 
+        href="images/brainicon-06.png">
+            <meta name="description" content="Tools for mental health and depression."/>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+            <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            
+            <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+            <link href="stylesheets/depression.css" type="text/css" rel="stylesheet">
+            <link href="stylesheets/mobile.css" type="text/css" rel="stylesheet">
+            <link href="stylesheets/beckdep.css" type="text/css" rel="stylesheet">
+            
+        <title>Depression: Beck Depression Inventory</title>
+    </head>
+
+    <body id="pgs">
+     <!-- instructions from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+     <!-- Simulate a smartphone / tablet -->
+        <div class="mobile-container">
+        
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="/" class="active" id="depmobile" style="font-family:'Luckiest Guy', cursive;">BRAIN&#9889SPARK</a>
+                <div id="myLinks">
+                    <a href="selfharm" id="shmobile">self-harm</a>
+                    <a href="depression" id="depmobile">depression</a>
+                    <a href="anxiety" id="anxmobile">anxiety</a>
+                    <a href="loneliness" id="lonemobile">loneliness</a>
+                    <a href="about" id="aboutmobile">about</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menuFunction()" title="menu">
+                    <span class="visually-hidden">menu</span><i class="fa fa-bars"></i>
+                </a>
+            </div>
+            
+        <!-- end of smartphone / tablet -->
+        </div>
+        
+        <div class="largeScreen">
+    
+        <header class="header-container">
+            <div class="hometag" id="dep">Quiz Results</div>
+        </header>
+    
+        <nav class="navigation">
+            <div aria-title="home"><a href="/" class="nav-button-link" title="home"><button class="nav-buttons" id="home-nav-button">home</button></a></div>
+            <div aria-title="self-harm"><a href="selfharm" class="nav-button-link" title="self-harm"><button class="nav-buttons" id="self-harm-nav-button">self-harm</button></a></div>
+            <div aria-title="depression"><a href="depression" class="nav-button-link" title="depression"><button class="nav-buttons" id="depression-nav-button">depression</button></a></div>
+            <div aria-title="anxiety"><a href="anxiety" class="nav-button-link" title="anxiety"><button class="nav-buttons" id="anxiety-nav-button">anxiety</button></a></div>
+            <div aria-title="loneliness"><a href="loneliness" class="nav-button-link" title="loneliness"><button class="nav-buttons" id="loneliness-nav-button">loneliness</button></a></div>
+            <div aria-title="about"><a href="about" class="nav-button-link" title="about"><button class="nav-buttons" id="about-nav-button">about</button></a></div>
+        </nav>
+        </div>
+        
+        <aside class="about-boxes">
+            <section class="info-aside" id="dep-size"><div class="dep-info-aside"><h2 class="small-caps">beck depression inventory</h2>
+                <p>This is the Beck Depression Inventory. It is NOT a replacement for seeking medical/professional help. However, this inventory can help you assess the severity of your depression and what symptoms might be causing problems the most. If you feel like you are actively suicidal, please reach out for help. Check for resources on the <a href="selfharm" id="beck" title="self-harm">Self-Harm page.</a></p></div></section>
+        </aside>
+    
+        <main class="page">
+          <div class="border-container">
+            <section class="beck-results">
+              <div class="results-container">
+                <h2 class="small-caps" id="results-center">your results number is:
+                <div id="test-results"></div>
+                </h2>
+                <h2 class="small-caps">interpreting your results number</h2>
+                <h5>1-10</h5><p>These ups and downs are considered normal.</p>
+                <h5>11-16</h5><p>Mild mood disturbance.</p>
+                <h5>17-20</h5><p>Borderline clinical depression.</p>
+                <h5>21-30</h5><p>Moderate depression.</p>
+                <h5>31-40</h5><p>Severe depression.</p>
+                <h5>over 40</h5><p>Extreme depression.</p>
+              </div>
+            </section>
+            </div>
+        </main>
+    <!-- jQuery first, then Bootstrap JS -->
+    <!-- ><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api" ></script>
+    
+    <script type="text/javascript" src="javascripts/mobile.js"></script>
+    <!-- <script type="text/javascript" src="javascripts/beck.js"></script> -->
+    <script type="text/javascript" src="javascripts/beckresults.js"></script>
+        
+    </body>
+    
+</html>
+
+                     

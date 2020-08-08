@@ -17,5 +17,12 @@ Got video slider info. from: https://stackoverflow.com/questions/52924820/pause-
   
 Instructions for how to make a non-image thought bubble: https://www.sitepoint.com/pure-css3-speech-bubbles/
 
+How to style custom radio buttons: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+
+The Beck Depression Inventory: https://www.ismanet.org/doctoryourspirit/pdfs/Beck-Depression-Inventory-BDI.pdf
+
+Passing javascript data for the Beck Page: https://lage.us/Javascript-Pass-Variables-to-Another-Page.html
+
+
 
   

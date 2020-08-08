@@ -19,17 +19,16 @@ $(function() {
 
         event.preventDefault();
 
-        var inputName = $('#lonelinessPostName')
+        var inputName = $('#lonelinessPostName').attr('name')
         var inputBody = $('#lonelinessPostBody')
 
         $.ajax( {
             url: 'loneliness/post',
             method: 'POST',
             contentType: 'application/json',
-            data: JSON.stringify({ name: inputName.val(), textbody: inputBody.val() }),
+            data: JSON.stringify({ name: inputName, textbody: inputBody.val() }),
             success: function(message) {
                 console.log(message)
-                inputName.val('')
                 inputBody.val('')
                 var formattedDate = new Date(message.datetime_of_post);
                 var posts = $('#posts')
@@ -85,6 +84,21 @@ $(function() {
             }
         })
     });
+
+    $('#signUp').on('click', '#logoutUser', function(event) {
+
+        event.preventDefault();
+
+        $.ajax( {
+            url: 'auth/logout',
+            method: 'POST',
+            contentType: 'application/json',
+            success: function(message) {
+                window.location.reload();
+            }
+        })
+    })
+    
 })
 
 function createCard(id, username, body, formattedDate) {

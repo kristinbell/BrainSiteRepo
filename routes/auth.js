@@ -18,8 +18,9 @@ router.post('/login', function(req, res, next) {
     })(req, res, next);
 });
 
-router.get('/failure', function(req, res, next) {
-    res.render('depression')
+router.post('/logout', function(req, res, next) {
+    req.logout();
+    res.send("success")
 });
 
 module.exports = router;

@@ -19,7 +19,7 @@
     -moz-border-radius: 30px;
     border-radius: 30px;
     -webkit-box-shadow: 2px 2px 4px #888;
-    -moz-box-shadow 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
     box-shadow: 2px 2px 4px #888;
     padding: 24px;
     text-align: center;
@@ -164,4 +164,8 @@ h5.card-title{
 .board-content {
   overflow-y: scroll;
   height: 900px !important;
+}
+
+.username-display {
+  overflow-wrap: break-word;
 }

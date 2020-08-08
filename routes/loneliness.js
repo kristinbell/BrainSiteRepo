@@ -20,10 +20,6 @@ router.post('/post', function(req, res) {
     datetime_of_post: new Date()
   });
 
-  if (!message.username) {
-    message.username = 'Anonymous';
-  }
-
   message
     .save()
     .then(result => {

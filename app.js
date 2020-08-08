@@ -18,6 +18,8 @@ var selfHarmRouter = require('./routes/selfharm');
 var lonelinessRouter = require('./routes/loneliness');
 var anxietyRouter = require('./routes/anxiety');
 var aboutRouter = require('./routes/about');
+var beckRouter = require('./routes/beck');
+var beckResultsRouter = require('./routes/beckresults');
 
 var app = express();
 
@@ -39,6 +41,8 @@ app.use('/selfharm', selfHarmRouter);
 app.use('/loneliness', lonelinessRouter);
 app.use('/anxiety', anxietyRouter);
 app.use('/about', aboutRouter);
+app.use('/beck', beckRouter);
+app.use('/beckresults', beckResultsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

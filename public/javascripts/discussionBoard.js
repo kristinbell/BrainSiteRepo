@@ -15,8 +15,8 @@ $(document).ready(function() {
 
 $(function() {
 
-    $('#postMessage').on('click', '.submitPost', function(event) {
-        
+    $('#postMessage').submit(function(event) {
+
         event.preventDefault();
 
         var inputName = $('#lonelinessPostName')
@@ -40,7 +40,7 @@ $(function() {
         })
     })
 
-    $('#postMessage').on('click', '.clearForm', function(event) {
+    $('#postMessage').on('click', '#clearForm', function(event) {
 
         event.preventDefault();
 
@@ -60,6 +60,30 @@ $(function() {
             })
             $(this).remove();
         }  
+    });
+
+    $('#signUp').submit(function(event) {
+
+        event.preventDefault();
+
+        var username = $('#username').val()
+        var password = $('#password').val()
+        $('#username').val('');
+        $('#password').val('');
+
+        $.ajax( {
+            url: 'auth/login',
+            method: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ username: username, password: password }),
+            success: function(message) {
+                if (message === "success") {
+                    window.location.reload();
+                } else {
+                    alert("Sorry, you entered the wrong password! Please try again.")
+                }
+            }
+        })
     });
 })
 

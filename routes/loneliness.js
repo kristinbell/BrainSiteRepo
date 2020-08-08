@@ -5,7 +5,11 @@ const Message = require('../models/message.js')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('loneliness');
+  if (req.user) {
+    console.log(req.user)
+    res.render('loneliness', {user: req.user.username})
+  }
+  res.render('loneliness', {user: false});
 });
 
 router.post('/post', function(req, res) {

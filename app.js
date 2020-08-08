@@ -6,6 +6,10 @@ var logger = require('morgan');
 var bodyParser = require('body-parser')
 var mongoose = require('mongoose');
 var cors = require('cors')
+var session = require('express-session');
+var passport = require('passport');
+var localStrategy = require('passport-local').Strategy;
+
 require('dotenv').config();
 var mongoDB = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@brainsparkcluster.sjfbl.mongodb.net/${process.env.DATABASE}?retryWrites=true&w=majority`;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -18,6 +22,8 @@ var selfHarmRouter = require('./routes/selfharm');
 var lonelinessRouter = require('./routes/loneliness');
 var anxietyRouter = require('./routes/anxiety');
 var aboutRouter = require('./routes/about');
+var auth = require('./routes/auth')
+var User = require('./models/user.js')
 
 var app = express();
 
@@ -32,6 +38,14 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
+app.use(session({
+  'store': new session.MemoryStore(),
+  'secret': 'gfr456$^(%$jfkderfg',
+  'resave': false,
+  'saveUninitialized': false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use('/', indexRouter);
 app.use('/depression', depressionRouter);
@@ -39,6 +53,39 @@ app.use('/selfharm', selfHarmRouter);
 app.use('/loneliness', lonelinessRouter);
 app.use('/anxiety', anxietyRouter);
 app.use('/about', aboutRouter);
+app.use('/auth', auth);
+
+passport.serializeUser(function(user, callback) {
+  callback(null, user);
+});
+
+passport.deserializeUser(function(user, callback) {
+  callback(null, user);
+});
+
+passport.use(new localStrategy(function(username, password, done) {
+  User.findOne({username:username})
+  .exec()
+  .then(result => {
+      if (result) {
+          if (result.comparePassword(password, result.password)) {
+            done(null, result);
+          } else {
+            done(null, false);
+          }
+      } else {
+        var newUser = new User()
+        newUser.username = username;
+        newUser.password = newUser.hashPassword(password);
+        newUser.save()
+            .then(result => {
+              done(null, result);
+            })
+            .catch(err => console.log(err));
+      }
+  })
+  .catch(err => console.log(err))
+}));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

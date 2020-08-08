@@ -63,45 +63,70 @@
         </aside>
     
         <main class="page">
-            <section class="related-info" id="lone-order-ri">
-                <div class="container lone-login-style">
-                    <div class="row">
-                      <div class="col center-block">
-                        <form id="postMessage">
-                          <div class="form-group title">
-                            <h2 class="small-caps">chat with us</h2>
-                          </div>
-                          <div class="form-group">
-                            <label for="lonelinessPostName">Username:</label>
-                            <input type="text" class="form-control" id="lonelinessPostName">
-                          </div>
-                          <div class="form-group">
-                            <label for="lonelinessPostBody">Thoughts Today?</label>
-                            <textarea class="form-control" id="lonelinessPostBody" required></textarea>
-                          </div>
-                          <div class="button-container">
-                            <button type="submit" class="btn btn-primary submitPost">Submit</button>
-                            <button type="submit" class="btn btn-secondary clearForm">Reset</button>
-                          </div>
-                        </form>
-                      </div>
+          <section class="related-info" id="lone-order-ri">
+              <div class="container lone-login-style">
+                  <div class="row">
+                    <div class="col center-block">
+                      <form id="postMessage">
+                        <div class="form-group title">
+                          <h2 class="small-caps">chat with us</h2>
+                        </div>
+                        <div class="form-group">
+                          <label for="lonelinessPostName">Username:</label>
+                          <input type="text" class="form-control" id="lonelinessPostName">
+                        </div>
+                        <div class="form-group">
+                          <label for="lonelinessPostBody">Thoughts Today?</label>
+                          <textarea class="form-control" id="lonelinessPostBody" required></textarea>
+                        </div>
+                        <div class="button-container">
+                          <input type="submit" id="submitPost" class="btn btn-primary"></button>
+                          <button type="submit" id="clearForm" class="btn btn-secondary">Reset</button>
+                        </div>
+                      </form>
                     </div>
                   </div>
-            </section>
-            <section class="content1 board-content" id="lone-order-c1">
-                <div class="post-container">
-                    <div id="posts"></div>
                 </div>
-            </section>
-        </main>
-    
-        
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/mobile.js"></script>
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-    <script type="text/javascript" src="javascripts/discussionBoard.js"></script>
-    
-    </body>
-    
+                <div class="container">
+                  <div class="row">
+                    <div class="col center-block">
+                      <form id="signUp">
+                        <div class="form-group title">
+                          <h2 class="small-caps">login</h2>
+                        </div>
+                        <div class="form-group">
+                          <label for="username">Username:</label>
+                          <input type="text" class="form-control" id="username" name="username" required/>
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <% if (user) { %>
+                          <input type="text" class="form-control" id="password" name="password" required disabled/>
+                          <%} else { %>
+                          <input type="text" class="form-control" id="password" name="password" required/>
+                          <% } %>
+                        </div>
+                        <div class="button-container">
+                          <input type="submit" id="signupUser" class="btn btn-primary" value="Sign Up / Log In"></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+          </section>
+          <section class="content1 board-content" id="lone-order-c1">
+              <div class="post-container">
+                  <div id="posts"></div>
+              </div>
+          </section>
+      </main>
+  
+      
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/mobile.js"></script>
+  <script type="text/javascript" src="javascripts/discussionBoard.js"></script>
+  
+  </body>
+  
 </html>

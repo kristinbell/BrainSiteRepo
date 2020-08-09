@@ -133,7 +133,12 @@ a#beck:visited{
 }
 
 #submit{
-  margin: 20px 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000000;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 20px 15px;
   background-color: var(--purple-w-black);
 
 }

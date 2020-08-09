@@ -1551,19 +1551,19 @@
 	
 
 	.blueStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.blueStyle:hover {fill:var(--aqua-w-black);stroke:var(--aqua-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	/*.blueStyle:hover {fill:var(--aqua-w-black);stroke:var(--aqua-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} */
 	.blueStyle2 {fill:var(--aqua-w-black);stroke:var(aqua-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	
 	.purpleStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.purpleStyle:hover {fill:var(--purple-w-black);stroke:var(--purple-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	/*.purpleStyle:hover {fill:var(--purple-w-black);stroke:var(--purple-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} */
 
 	.pinkStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.pinkStyle:hover {fill:var(--pink-w-black);stroke:var(--pink-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	/*.pinkStyle:hover {fill:var(--pink-w-black);stroke:var(--pink-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} */
 	
 	.yellowStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.yellowStyle:hover {fill:var(--yellow-w-black);stroke:var(--yellow-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	/* .yellowStyle:hover {fill:var(--yellow-w-black);stroke:var(--yellow-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} */
 	
 	.greenStyle{fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.greenStyle:hover {fill:var(--green-w-black);stroke:var(--green-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	/*.greenStyle:hover {fill:var(--green-w-black);stroke:var(--green-w-black);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} */
 
 		

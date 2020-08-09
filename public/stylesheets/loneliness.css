@@ -1,5 +1,21 @@
 /* Thought bubble help: https://www.sitepoint.com/pure-css3-speech-bubbles/ */
+@media (max-width: 320px) {
+  #signupUser.btn-primary{
+    width: 78%;
+  }
+}
 
+@media (min-width: 321px) and (max-width: 375px){
+  #signupUser.btn-primary{
+    width: 78%;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 599px){
+  #signupUser.btn-primary{
+    width: 78%;
+  }
+}
 
 .lone-login-style {
   padding: 20px;

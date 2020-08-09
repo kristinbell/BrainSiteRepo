@@ -38,6 +38,10 @@
 		min-width: 100%;
 	}
 	
+	button {
+		cursor: pointer;
+	}
+	
 	@media (max-width: 320px) {
 		#home{
 			width: 305px;

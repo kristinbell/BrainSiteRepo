@@ -6,7 +6,9 @@ The site is currently live at: https://brainspark.herokuapp.com
 This website is a prototype for Brain Spark, a site that provides tools to users to help deal with mental health symptoms.
 Included in this website are the following: maps to locate services, videos, spotify playlists, memes, discussion board, about page.
 
-We utilized HTML, Bootstrap, Javascript, Node.js, MongoDB, Express (EJS), SVG, and CSS to create this site.
+We utilized HTML, CSS, SVG's, Bootstrap, Javascript, EJS templating, Node.js, MongoDB and Express to create this site.
+
+API's used: Google Maps, Imgur. 
 
 We found code help from various docs and discussion boards online, and the following specific sites:
 
@@ -22,6 +24,14 @@ How to style custom radio buttons: https://www.w3schools.com/howto/howto_css_cus
 The Beck Depression Inventory: https://www.ismanet.org/doctoryourspirit/pdfs/Beck-Depression-Inventory-BDI.pdf
 
 Passing javascript data for the Beck Page: https://lage.us/Javascript-Pass-Variables-to-Another-Page.html
+
+Express: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website
+
+Passport User Authentication: http://www.passportjs.org/docs/ and https://www.youtube.com/watch?v=Q3_lOyBbpmE 
+
+Google Maps: https://developers.google.com/maps/documentation/javascript/overview
+
+Imgur: https://apidocs.imgur.com/?version=latest
 
 
 

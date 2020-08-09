@@ -3,7 +3,7 @@ $(document).ready(function() {
         url: 'loneliness/get',
         contentType: 'application/json',
         success: function(response) {
-            var posts = $('#posts')
+            var posts = $('#posts');
             posts.empty();
             response.forEach(function(message) {
                 var formattedDate = new Date(message.datetime_of_post);
@@ -19,8 +19,8 @@ $(function() {
 
         event.preventDefault();
 
-        var inputName = $('#lonelinessPostName').attr('name')
-        var inputBody = $('#lonelinessPostBody')
+        var inputName = $('#lonelinessPostName').attr('name');
+        var inputBody = $('#lonelinessPostBody');
 
         $.ajax( {
             url: 'loneliness/post',
@@ -28,10 +28,9 @@ $(function() {
             contentType: 'application/json',
             data: JSON.stringify({ name: inputName, textbody: inputBody.val() }),
             success: function(message) {
-                console.log(message)
-                inputBody.val('')
+                inputBody.val('');
                 var formattedDate = new Date(message.datetime_of_post);
-                var posts = $('#posts')
+                var posts = $('#posts');
                 posts.append(createCard(message._id, message.username, message.body, formattedDate));
                 var board = $('.board-content');
                 board.scrollTop = board.scrollHeight;
@@ -56,7 +55,6 @@ $(function() {
                     method: 'DELETE',
                     contentType: 'application/json',
                     success: function(response) {
-                        console.log(response)
                     }
                 })
                 $(this).remove();
@@ -68,8 +66,8 @@ $(function() {
 
         event.preventDefault();
 
-        var username = $('#username').val()
-        var password = $('#password').val()
+        var username = $('#username').val();
+        var password = $('#password').val();
         $('#username').val('');
         $('#password').val('');
 
@@ -117,6 +115,6 @@ function createCard(id, username, body, formattedDate) {
         + formattedDate.toLocaleString();
         + "</p>"
         + "</div>"
-        + "</div>" ;
+        + "</div>";
     return li;
 }

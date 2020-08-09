@@ -3,9 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var cors = require('cors')
+var cors = require('cors');
 var session = require('express-session');
 var passport = require('passport');
 var localStrategy = require('passport-local').Strategy;
@@ -25,8 +25,8 @@ var aboutRouter = require('./routes/about');
 var beckRouter = require('./routes/beck');
 var beckResultsRouter = require('./routes/beckresults');
 
-var auth = require('./routes/auth')
-var User = require('./models/user.js')
+var auth = require('./routes/auth');
+var User = require('./models/user.js');
 
 
 var app = express();
@@ -81,7 +81,7 @@ passport.use(new localStrategy(function(username, password, done) {
             done(null, false);
           }
       } else {
-        var newUser = new User()
+        var newUser = new User();
         newUser.username = username;
         newUser.password = newUser.hashPassword(password);
         newUser.save()

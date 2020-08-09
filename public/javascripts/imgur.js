@@ -4,10 +4,10 @@ $(document).ready(function() {
         url: 'depression/get/cute',
         contentType: 'application/json',
         success: function(response) {
-            var memes = $('.kittens')
+            var memes = $('.kittens');
             response.data.forEach(function(meme) {
                 if (meme.link.includes(".jpg")) {
-                    memes.append(createMeme(meme))
+                    memes.append(createMeme(meme));
                 }
             })
             $('.kittens').children('.carousel-item').eq(0).addClass("active");
@@ -21,7 +21,7 @@ $(document).ready(function() {
             var memes = $('.memes')
             response.data.forEach(function(meme) {
                 if (meme.link.includes(".jpg") || meme.link.includes(".png") || meme.link.includes(".gif")) {
-                    memes.append(createMeme(meme))
+                    memes.append(createMeme(meme));
                 }
             })
             $('.memes').children('.carousel-item').eq(0).addClass("active");

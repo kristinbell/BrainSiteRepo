@@ -19,7 +19,7 @@
     "express-session": "^1.17.1",
     "http-errors": "~1.6.3",
     "jquery": "^3.5.1",
-    "jquery-validation": "^1.19.3",
+    "jquery-validation": "^1.19.5",
     "mongoose": "^5.9.25",
     "morgan": "~1.9.1",
     "node-fetch": "^2.6.1",

@@ -23,8 +23,10 @@
     "jquery-validation": "^1.19.5",
     "mongoose": "^5.9.25",
     "morgan": "~1.9.1",
+
     "node-fetch": "^2.6.7",
     "nodemon": "^2.0.4",
+
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
   }
